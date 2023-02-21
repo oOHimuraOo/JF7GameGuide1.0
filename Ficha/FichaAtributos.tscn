@@ -1,0 +1,2865 @@
+[gd_scene load_steps=25 format=2]
+
+[ext_resource path="res://Tipografias/COPRGTB.TTF" type="DynamicFontData" id=1]
+[ext_resource path="res://Texturas/textura-de-papel-velha-de-alta-resolução-13492917.jpg" type="Texture" id=2]
+[ext_resource path="res://Texturas/Botão n apert.png" type="Texture" id=3]
+[ext_resource path="res://Texturas/Botão n apert plus.png" type="Texture" id=4]
+[ext_resource path="res://Texturas/vintage-black-Corner-Border.png" type="Texture" id=5]
+[ext_resource path="res://Texturas/Botão apert minus 2.png" type="Texture" id=6]
+[ext_resource path="res://Texturas/Botão apert plus 2.png" type="Texture" id=7]
+[ext_resource path="res://Texturas/Botão apert.png" type="Texture" id=8]
+[ext_resource path="res://Texturas/Botão apert plus.png" type="Texture" id=9]
+[ext_resource path="res://Texturas/f1f77e7e98732ac4beff3e27a40d2db5.png" type="Texture" id=10]
+[ext_resource path="res://Texturas/Botão apert minus.png" type="Texture" id=11]
+[ext_resource path="res://Texturas/pngtree-texture-texture-background-promotion-main-map-image_135207.jpg" type="Texture" id=12]
+[ext_resource path="res://Texturas/Botão n apert minus.png" type="Texture" id=13]
+[ext_resource path="res://Tipografias/BotaoTXT.tres" type="DynamicFont" id=14]
+[ext_resource path="res://Ficha/FichaAtributos.gd" type="Script" id=15]
+[ext_resource path="res://Tipografias/Consti e Int font.tres" type="DynamicFont" id=16]
+[ext_resource path="res://Texturas/Dado nao apertado.png" type="Texture" id=17]
+[ext_resource path="res://Texturas/Dado desativado.png" type="Texture" id=18]
+[ext_resource path="res://Texturas/246569.png" type="Texture" id=19]
+[ext_resource path="res://Texturas/pngtree-golden-vintage-border-retro-frame-free-png-png-image_7262547.png" type="Texture" id=20]
+[ext_resource path="res://Texturas/647847.png" type="Texture" id=21]
+[ext_resource path="res://icon.png" type="Texture" id=22]
+[ext_resource path="res://Texturas/pngtree-light-effect-shiny-bright-glitter-png-image_8711405.png" type="Texture" id=23]
+
+[sub_resource type="DynamicFont" id=1]
+size = 18
+use_filter = true
+font_data = ExtResource( 1 )
+
+[node name="FichaAtributos" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 15 )
+
+[node name="Background" type="NinePatchRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+patch_margin_left = 30
+patch_margin_top = 30
+patch_margin_right = 30
+patch_margin_bottom = 30
+
+[node name="MargemEXT" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 40.0
+margin_top = 30.0
+margin_right = -40.0
+margin_bottom = -30.0
+
+[node name="PersonagemBG" type="NinePatchRect" parent="MargemEXT"]
+margin_right = 300.0
+margin_bottom = 1020.0
+rect_min_size = Vector2( 300, 540 )
+texture = ExtResource( 12 )
+patch_margin_left = 30
+patch_margin_top = 20
+patch_margin_right = 30
+patch_margin_bottom = 20
+
+[node name="PersonagemIMG" type="TextureRect" parent="MargemEXT/PersonagemBG"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 40.0
+margin_top = 30.0
+margin_right = -40.0
+margin_bottom = -30.0
+texture = ExtResource( 10 )
+expand = true
+
+[node name="MargemINT" type="VBoxContainer" parent="MargemEXT"]
+margin_left = 304.0
+margin_right = 1840.0
+margin_bottom = 1020.0
+size_flags_horizontal = 3
+
+[node name="MargemAtrExt" type="HBoxContainer" parent="MargemEXT/MargemINT"]
+margin_right = 1536.0
+margin_bottom = 966.0
+size_flags_vertical = 3
+
+[node name="Atributos" type="VBoxContainer" parent="MargemEXT/MargemINT/MargemAtrExt"]
+margin_right = 350.0
+margin_bottom = 966.0
+rect_min_size = Vector2( 350, 0 )
+custom_constants/separation = 10
+
+[node name="Margem" type="MarginContainer" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos"]
+margin_right = 350.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 350, 30 )
+
+[node name="For" type="Control" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos"]
+margin_top = 40.0
+margin_right = 350.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 350, 40 )
+
+[node name="AtributosBG" type="TextureRect" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/For"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -125.0
+margin_top = -20.0
+margin_right = 85.0
+margin_bottom = 15.0
+rect_min_size = Vector2( 210, 35 )
+texture = ExtResource( 12 )
+expand = true
+
+[node name="BotaoNeg" type="TextureButton" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/For/AtributosBG" groups=["BotaoNeg"]]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = -40.0
+margin_top = -20.0
+margin_bottom = 20.0
+disabled = true
+texture_normal = ExtResource( 13 )
+texture_pressed = ExtResource( 6 )
+texture_disabled = ExtResource( 11 )
+expand = true
+
+[node name="BotaoPos" type="TextureButton" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/For/AtributosBG" groups=["BotaoPos"]]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -20.0
+margin_right = 40.0
+margin_bottom = 20.0
+disabled = true
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 7 )
+texture_disabled = ExtResource( 9 )
+expand = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/For/AtributosBG"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -100.0
+margin_top = -17.5
+margin_right = 100.0
+margin_bottom = 17.5
+rect_min_size = Vector2( 200, 35 )
+
+[node name="Atributo" type="Label" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/For/AtributosBG/HBoxContainer"]
+margin_top = 6.0
+margin_right = 192.0
+margin_bottom = 29.0
+rect_pivot_offset = Vector2( -550, 202 )
+size_flags_horizontal = 3
+custom_fonts/font = ExtResource( 14 )
+text = "Força"
+valign = 1
+
+[node name="Mudanca" type="Label" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/For/AtributosBG/HBoxContainer" groups=["EtiquetaMudanca"]]
+margin_left = 196.0
+margin_top = 6.0
+margin_right = 196.0
+margin_bottom = 29.0
+rect_pivot_offset = Vector2( -550, 202 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_fonts/font = ExtResource( 14 )
+align = 1
+valign = 1
+
+[node name="Valor" type="Label" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/For/AtributosBG/HBoxContainer"]
+margin_left = 200.0
+margin_top = 6.0
+margin_right = 200.0
+margin_bottom = 29.0
+rect_pivot_offset = Vector2( -550, 202 )
+custom_fonts/font = ExtResource( 14 )
+align = 1
+valign = 1
+
+[node name="Dados" type="TextureButton" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/For/AtributosBG" groups=["Dados", "RolarAtributo1"]]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = 40.0
+margin_top = -20.0
+margin_right = 80.0
+margin_bottom = 20.0
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 19 )
+texture_disabled = ExtResource( 18 )
+expand = true
+
+[node name="Des" type="Control" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos"]
+margin_top = 90.0
+margin_right = 350.0
+margin_bottom = 130.0
+rect_min_size = Vector2( 350, 40 )
+
+[node name="AtributosBG" type="TextureRect" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Des"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -125.0
+margin_top = -20.0
+margin_right = 85.0
+margin_bottom = 15.0
+rect_min_size = Vector2( 210, 35 )
+texture = ExtResource( 12 )
+expand = true
+
+[node name="BotaoNeg" type="TextureButton" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Des/AtributosBG" groups=["BotaoNeg"]]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = -40.0
+margin_top = -20.0
+margin_bottom = 20.0
+disabled = true
+texture_normal = ExtResource( 13 )
+texture_pressed = ExtResource( 6 )
+texture_disabled = ExtResource( 11 )
+expand = true
+
+[node name="BotaoPos" type="TextureButton" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Des/AtributosBG" groups=["BotaoPos"]]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -20.0
+margin_right = 40.0
+margin_bottom = 20.0
+disabled = true
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 7 )
+texture_disabled = ExtResource( 9 )
+expand = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Des/AtributosBG"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -100.0
+margin_top = -17.5
+margin_right = 100.0
+margin_bottom = 17.5
+rect_min_size = Vector2( 200, 35 )
+
+[node name="Atributo" type="Label" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Des/AtributosBG/HBoxContainer"]
+margin_top = 6.0
+margin_right = 192.0
+margin_bottom = 29.0
+rect_pivot_offset = Vector2( -550, 202 )
+size_flags_horizontal = 3
+custom_fonts/font = ExtResource( 14 )
+text = "Destreza"
+valign = 1
+
+[node name="Mudanca" type="Label" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Des/AtributosBG/HBoxContainer" groups=["EtiquetaMudanca"]]
+margin_left = 196.0
+margin_top = 6.0
+margin_right = 196.0
+margin_bottom = 29.0
+rect_pivot_offset = Vector2( -550, 202 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_fonts/font = ExtResource( 14 )
+align = 1
+valign = 1
+
+[node name="Valor" type="Label" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Des/AtributosBG/HBoxContainer"]
+margin_left = 200.0
+margin_top = 6.0
+margin_right = 200.0
+margin_bottom = 29.0
+rect_pivot_offset = Vector2( -550, 202 )
+custom_fonts/font = ExtResource( 14 )
+align = 1
+valign = 1
+
+[node name="Dados" type="TextureButton" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Des/AtributosBG" groups=["Dados", "RolarAtributo2"]]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = 40.0
+margin_top = -20.0
+margin_right = 80.0
+margin_bottom = 20.0
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 19 )
+texture_disabled = ExtResource( 18 )
+expand = true
+
+[node name="Con" type="Control" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos"]
+margin_top = 140.0
+margin_right = 350.0
+margin_bottom = 180.0
+rect_min_size = Vector2( 350, 40 )
+
+[node name="AtributosBG" type="TextureRect" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Con"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -125.0
+margin_top = -20.0
+margin_right = 85.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 210, 35 )
+texture = ExtResource( 12 )
+expand = true
+
+[node name="BotaoNeg" type="TextureButton" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Con/AtributosBG" groups=["BotaoNeg"]]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = -40.0
+margin_top = -20.0
+margin_bottom = 20.0
+disabled = true
+texture_normal = ExtResource( 13 )
+texture_pressed = ExtResource( 6 )
+texture_disabled = ExtResource( 11 )
+expand = true
+
+[node name="BotaoPos" type="TextureButton" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Con/AtributosBG" groups=["BotaoPos"]]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -20.0
+margin_right = 40.0
+margin_bottom = 20.0
+disabled = true
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 7 )
+texture_disabled = ExtResource( 9 )
+expand = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Con/AtributosBG"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -100.0
+margin_top = -17.5
+margin_right = 100.0
+margin_bottom = 17.5
+rect_min_size = Vector2( 200, 35 )
+
+[node name="Atributo" type="Label" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Con/AtributosBG/HBoxContainer"]
+margin_top = 8.0
+margin_right = 192.0
+margin_bottom = 27.0
+rect_pivot_offset = Vector2( -550, 202 )
+size_flags_horizontal = 3
+custom_fonts/font = ExtResource( 16 )
+text = "Constituição"
+valign = 1
+
+[node name="Mudanca" type="Label" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Con/AtributosBG/HBoxContainer" groups=["EtiquetaMudanca"]]
+margin_left = 196.0
+margin_top = 6.0
+margin_right = 196.0
+margin_bottom = 29.0
+rect_pivot_offset = Vector2( -550, 202 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_fonts/font = ExtResource( 14 )
+align = 1
+valign = 1
+
+[node name="Valor" type="Label" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Con/AtributosBG/HBoxContainer"]
+margin_left = 200.0
+margin_top = 6.0
+margin_right = 200.0
+margin_bottom = 29.0
+rect_pivot_offset = Vector2( -550, 202 )
+custom_fonts/font = ExtResource( 14 )
+align = 1
+valign = 1
+
+[node name="Dados" type="TextureButton" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Con/AtributosBG" groups=["Dados", "RolarAtributo3"]]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = 40.0
+margin_top = -20.0
+margin_right = 80.0
+margin_bottom = 20.0
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 19 )
+texture_disabled = ExtResource( 18 )
+expand = true
+
+[node name="Hon" type="Control" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos"]
+margin_top = 190.0
+margin_right = 350.0
+margin_bottom = 230.0
+rect_min_size = Vector2( 350, 40 )
+
+[node name="AtributosBG" type="TextureRect" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Hon"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -125.0
+margin_top = -20.0
+margin_right = 85.0
+margin_bottom = 15.0
+rect_min_size = Vector2( 210, 35 )
+texture = ExtResource( 12 )
+expand = true
+
+[node name="BotaoNeg" type="TextureButton" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Hon/AtributosBG" groups=["BotaoNeg"]]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = -40.0
+margin_top = -20.0
+margin_bottom = 20.0
+disabled = true
+texture_normal = ExtResource( 13 )
+texture_pressed = ExtResource( 6 )
+texture_disabled = ExtResource( 11 )
+expand = true
+
+[node name="BotaoPos" type="TextureButton" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Hon/AtributosBG" groups=["BotaoPos"]]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -20.0
+margin_right = 40.0
+margin_bottom = 20.0
+disabled = true
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 7 )
+texture_disabled = ExtResource( 9 )
+expand = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Hon/AtributosBG"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -100.0
+margin_top = -17.5
+margin_right = 100.0
+margin_bottom = 17.5
+rect_min_size = Vector2( 200, 35 )
+
+[node name="Atributo" type="Label" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Hon/AtributosBG/HBoxContainer"]
+margin_top = 6.0
+margin_right = 192.0
+margin_bottom = 29.0
+rect_pivot_offset = Vector2( -550, 202 )
+size_flags_horizontal = 3
+custom_fonts/font = ExtResource( 14 )
+text = "Honra"
+valign = 1
+
+[node name="Mudanca" type="Label" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Hon/AtributosBG/HBoxContainer" groups=["EtiquetaMudanca"]]
+margin_left = 196.0
+margin_top = 6.0
+margin_right = 196.0
+margin_bottom = 29.0
+rect_pivot_offset = Vector2( -550, 202 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_fonts/font = ExtResource( 14 )
+align = 1
+valign = 1
+
+[node name="Valor" type="Label" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Hon/AtributosBG/HBoxContainer"]
+margin_left = 200.0
+margin_top = 6.0
+margin_right = 200.0
+margin_bottom = 29.0
+rect_pivot_offset = Vector2( -550, 202 )
+custom_fonts/font = ExtResource( 14 )
+align = 1
+valign = 1
+
+[node name="Dados" type="TextureButton" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Hon/AtributosBG" groups=["Dados", "RolarAtributo4"]]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = 40.0
+margin_top = -20.0
+margin_right = 80.0
+margin_bottom = 20.0
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 19 )
+texture_disabled = ExtResource( 18 )
+expand = true
+
+[node name="San" type="Control" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos"]
+margin_top = 240.0
+margin_right = 350.0
+margin_bottom = 280.0
+rect_min_size = Vector2( 350, 40 )
+
+[node name="AtributosBG" type="TextureRect" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/San"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -125.0
+margin_top = -20.0
+margin_right = 85.0
+margin_bottom = 15.0
+rect_min_size = Vector2( 210, 35 )
+texture = ExtResource( 12 )
+expand = true
+
+[node name="BotaoNeg" type="TextureButton" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/San/AtributosBG" groups=["BotaoNeg"]]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = -40.0
+margin_top = -20.0
+margin_bottom = 20.0
+disabled = true
+texture_normal = ExtResource( 13 )
+texture_pressed = ExtResource( 6 )
+texture_disabled = ExtResource( 11 )
+expand = true
+
+[node name="BotaoPos" type="TextureButton" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/San/AtributosBG" groups=["BotaoPos"]]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -20.0
+margin_right = 40.0
+margin_bottom = 20.0
+disabled = true
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 7 )
+texture_disabled = ExtResource( 9 )
+expand = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/San/AtributosBG"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -100.0
+margin_top = -17.5
+margin_right = 100.0
+margin_bottom = 17.5
+rect_min_size = Vector2( 200, 35 )
+
+[node name="Atributo" type="Label" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/San/AtributosBG/HBoxContainer"]
+margin_top = 6.0
+margin_right = 192.0
+margin_bottom = 29.0
+rect_pivot_offset = Vector2( -550, 202 )
+size_flags_horizontal = 3
+custom_fonts/font = ExtResource( 14 )
+text = "Sanidade"
+valign = 1
+
+[node name="Mudanca" type="Label" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/San/AtributosBG/HBoxContainer" groups=["EtiquetaMudanca"]]
+margin_left = 196.0
+margin_top = 6.0
+margin_right = 196.0
+margin_bottom = 29.0
+rect_pivot_offset = Vector2( -550, 202 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_fonts/font = ExtResource( 14 )
+align = 1
+valign = 1
+
+[node name="Valor" type="Label" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/San/AtributosBG/HBoxContainer"]
+margin_left = 200.0
+margin_top = 6.0
+margin_right = 200.0
+margin_bottom = 29.0
+rect_pivot_offset = Vector2( -550, 202 )
+custom_fonts/font = ExtResource( 14 )
+align = 1
+valign = 1
+
+[node name="Dados" type="TextureButton" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/San/AtributosBG" groups=["Dados", "RolarAtributo5"]]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = 40.0
+margin_top = -20.0
+margin_right = 80.0
+margin_bottom = 20.0
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 19 )
+texture_disabled = ExtResource( 18 )
+expand = true
+
+[node name="Sab" type="Control" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos"]
+margin_top = 290.0
+margin_right = 350.0
+margin_bottom = 330.0
+rect_min_size = Vector2( 350, 40 )
+
+[node name="AtributosBG" type="TextureRect" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Sab"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -125.0
+margin_top = -20.0
+margin_right = 85.0
+margin_bottom = 15.0
+rect_min_size = Vector2( 210, 35 )
+texture = ExtResource( 12 )
+expand = true
+
+[node name="BotaoNeg" type="TextureButton" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Sab/AtributosBG" groups=["BotaoNeg"]]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = -40.0
+margin_top = -20.0
+margin_bottom = 20.0
+disabled = true
+texture_normal = ExtResource( 13 )
+texture_pressed = ExtResource( 6 )
+texture_disabled = ExtResource( 11 )
+expand = true
+
+[node name="BotaoPos" type="TextureButton" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Sab/AtributosBG" groups=["BotaoPos"]]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -20.0
+margin_right = 40.0
+margin_bottom = 20.0
+disabled = true
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 7 )
+texture_disabled = ExtResource( 9 )
+expand = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Sab/AtributosBG"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -100.0
+margin_top = -17.5
+margin_right = 100.0
+margin_bottom = 17.5
+rect_min_size = Vector2( 200, 35 )
+
+[node name="Atributo" type="Label" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Sab/AtributosBG/HBoxContainer"]
+margin_top = 6.0
+margin_right = 192.0
+margin_bottom = 29.0
+rect_pivot_offset = Vector2( -550, 202 )
+size_flags_horizontal = 3
+custom_fonts/font = ExtResource( 14 )
+text = "Sabedoria"
+valign = 1
+
+[node name="Mudanca" type="Label" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Sab/AtributosBG/HBoxContainer" groups=["EtiquetaMudanca"]]
+margin_left = 196.0
+margin_top = 6.0
+margin_right = 196.0
+margin_bottom = 29.0
+rect_pivot_offset = Vector2( -550, 202 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_fonts/font = ExtResource( 14 )
+align = 1
+valign = 1
+
+[node name="Valor" type="Label" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Sab/AtributosBG/HBoxContainer"]
+margin_left = 200.0
+margin_top = 6.0
+margin_right = 200.0
+margin_bottom = 29.0
+rect_pivot_offset = Vector2( -550, 202 )
+custom_fonts/font = ExtResource( 14 )
+align = 1
+valign = 1
+
+[node name="Dados" type="TextureButton" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Sab/AtributosBG" groups=["Dados", "RolarAtributo6"]]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = 40.0
+margin_top = -20.0
+margin_right = 80.0
+margin_bottom = 20.0
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 19 )
+texture_disabled = ExtResource( 18 )
+expand = true
+
+[node name="Int" type="Control" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos"]
+margin_top = 340.0
+margin_right = 350.0
+margin_bottom = 380.0
+rect_min_size = Vector2( 350, 40 )
+
+[node name="AtributosBG" type="TextureRect" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Int"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -125.0
+margin_top = -20.0
+margin_right = 85.0
+margin_bottom = 15.0
+rect_min_size = Vector2( 210, 35 )
+texture = ExtResource( 12 )
+expand = true
+
+[node name="BotaoNeg" type="TextureButton" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Int/AtributosBG" groups=["BotaoNeg"]]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = -40.0
+margin_top = -20.0
+margin_bottom = 20.0
+disabled = true
+texture_normal = ExtResource( 13 )
+texture_pressed = ExtResource( 6 )
+texture_disabled = ExtResource( 11 )
+expand = true
+
+[node name="BotaoPos" type="TextureButton" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Int/AtributosBG" groups=["BotaoPos"]]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -20.0
+margin_right = 40.0
+margin_bottom = 20.0
+disabled = true
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 7 )
+texture_disabled = ExtResource( 9 )
+expand = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Int/AtributosBG"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -100.0
+margin_top = -17.5
+margin_right = 100.0
+margin_bottom = 17.5
+rect_min_size = Vector2( 200, 35 )
+
+[node name="Atributo" type="Label" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Int/AtributosBG/HBoxContainer"]
+margin_top = 8.0
+margin_right = 192.0
+margin_bottom = 27.0
+rect_pivot_offset = Vector2( -550, 202 )
+size_flags_horizontal = 3
+custom_fonts/font = ExtResource( 16 )
+text = "Inteligencia"
+valign = 1
+
+[node name="Mudanca" type="Label" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Int/AtributosBG/HBoxContainer" groups=["EtiquetaMudanca"]]
+margin_left = 196.0
+margin_top = 6.0
+margin_right = 196.0
+margin_bottom = 29.0
+rect_pivot_offset = Vector2( -550, 202 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_fonts/font = ExtResource( 14 )
+align = 1
+valign = 1
+
+[node name="Valor" type="Label" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Int/AtributosBG/HBoxContainer"]
+margin_left = 200.0
+margin_top = 6.0
+margin_right = 200.0
+margin_bottom = 29.0
+rect_pivot_offset = Vector2( -550, 202 )
+custom_fonts/font = ExtResource( 14 )
+align = 1
+valign = 1
+
+[node name="Dados" type="TextureButton" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Int/AtributosBG" groups=["Dados", "RolarAtributo7"]]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = 40.0
+margin_top = -20.0
+margin_right = 80.0
+margin_bottom = 20.0
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 19 )
+texture_disabled = ExtResource( 18 )
+expand = true
+
+[node name="Car" type="Control" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos"]
+margin_top = 390.0
+margin_right = 350.0
+margin_bottom = 430.0
+rect_min_size = Vector2( 350, 40 )
+
+[node name="AtributosBG" type="TextureRect" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Car"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -125.0
+margin_top = -20.0
+margin_right = 85.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 210, 35 )
+texture = ExtResource( 12 )
+expand = true
+
+[node name="BotaoNeg" type="TextureButton" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Car/AtributosBG" groups=["BotaoNeg"]]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = -40.0
+margin_top = -20.0
+margin_bottom = 20.0
+disabled = true
+texture_normal = ExtResource( 13 )
+texture_pressed = ExtResource( 6 )
+texture_disabled = ExtResource( 11 )
+expand = true
+
+[node name="BotaoPos" type="TextureButton" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Car/AtributosBG" groups=["BotaoPos"]]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -20.0
+margin_right = 40.0
+margin_bottom = 20.0
+disabled = true
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 7 )
+texture_disabled = ExtResource( 9 )
+expand = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Car/AtributosBG"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -100.0
+margin_top = -17.5
+margin_right = 100.0
+margin_bottom = 17.5
+rect_min_size = Vector2( 200, 35 )
+
+[node name="Atributo" type="Label" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Car/AtributosBG/HBoxContainer"]
+margin_top = 6.0
+margin_right = 192.0
+margin_bottom = 29.0
+rect_pivot_offset = Vector2( -550, 202 )
+size_flags_horizontal = 3
+custom_fonts/font = ExtResource( 14 )
+text = "Carisma"
+valign = 1
+
+[node name="Mudanca" type="Label" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Car/AtributosBG/HBoxContainer" groups=["EtiquetaMudanca"]]
+margin_left = 196.0
+margin_top = 6.0
+margin_right = 196.0
+margin_bottom = 29.0
+rect_pivot_offset = Vector2( -550, 202 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_fonts/font = ExtResource( 14 )
+align = 1
+valign = 1
+
+[node name="Valor" type="Label" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Car/AtributosBG/HBoxContainer"]
+margin_left = 200.0
+margin_top = 6.0
+margin_right = 200.0
+margin_bottom = 29.0
+rect_pivot_offset = Vector2( -550, 202 )
+custom_fonts/font = ExtResource( 14 )
+align = 1
+valign = 1
+
+[node name="Dados" type="TextureButton" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Car/AtributosBG" groups=["Dados", "RolarAtributo8"]]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = 40.0
+margin_top = -20.0
+margin_right = 80.0
+margin_bottom = 20.0
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 19 )
+texture_disabled = ExtResource( 18 )
+expand = true
+
+[node name="Pontos" type="HBoxContainer" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos"]
+margin_top = 440.0
+margin_right = 350.0
+margin_bottom = 470.0
+
+[node name="Label" type="Label" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Pontos"]
+margin_top = 3.0
+margin_right = 196.0
+margin_bottom = 26.0
+size_flags_horizontal = 3
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 14 )
+text = "27 pontos"
+align = 1
+
+[node name="Confirmar" type="TextureButton" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Pontos"]
+margin_left = 200.0
+margin_right = 350.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 150, 30 )
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 8 )
+texture_disabled = ExtResource( 8 )
+expand = true
+
+[node name="Label" type="Label" parent="MargemEXT/MargemINT/MargemAtrExt/Atributos/Pontos/Confirmar"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -61.0
+margin_top = -11.5
+margin_right = 61.0
+margin_bottom = 11.5
+custom_fonts/font = ExtResource( 14 )
+text = "Confirmar"
+align = 1
+valign = 1
+
+[node name="InfoBox" type="ScrollContainer" parent="MargemEXT/MargemINT/MargemAtrExt"]
+margin_left = 354.0
+margin_right = 1536.0
+margin_bottom = 966.0
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MargemEXT/MargemINT/MargemAtrExt/InfoBox"]
+margin_right = 1182.0
+margin_bottom = 966.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="MargemEXT/MargemINT/MargemAtrExt/InfoBox/VBoxContainer"]
+margin_right = 1182.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 286, 30 )
+
+[node name="PontosVida" type="HBoxContainer" parent="MargemEXT/MargemINT/MargemAtrExt/InfoBox/VBoxContainer"]
+margin_top = 34.0
+margin_right = 1182.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 286, 30 )
+
+[node name="Nome" type="Label" parent="MargemEXT/MargemINT/MargemAtrExt/InfoBox/VBoxContainer/PontosVida"]
+margin_top = 4.0
+margin_right = 1152.0
+margin_bottom = 25.0
+size_flags_horizontal = 3
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Pontos de Vida:"
+
+[node name="Valor" type="Label" parent="MargemEXT/MargemINT/MargemAtrExt/InfoBox/VBoxContainer/PontosVida"]
+margin_left = 1156.0
+margin_top = 4.0
+margin_right = 1182.0
+margin_bottom = 25.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "30"
+
+[node name="Ataque" type="HBoxContainer" parent="MargemEXT/MargemINT/MargemAtrExt/InfoBox/VBoxContainer"]
+margin_top = 68.0
+margin_right = 1182.0
+margin_bottom = 98.0
+rect_min_size = Vector2( 286, 30 )
+
+[node name="Nome" type="Label" parent="MargemEXT/MargemINT/MargemAtrExt/InfoBox/VBoxContainer/Ataque"]
+margin_top = 4.0
+margin_right = 1151.0
+margin_bottom = 25.0
+size_flags_horizontal = 3
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Bonus Base de Ataque:"
+
+[node name="Valor" type="Label" parent="MargemEXT/MargemINT/MargemAtrExt/InfoBox/VBoxContainer/Ataque"]
+margin_left = 1155.0
+margin_top = 4.0
+margin_right = 1182.0
+margin_bottom = 25.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "+6"
+
+[node name="CA" type="HBoxContainer" parent="MargemEXT/MargemINT/MargemAtrExt/InfoBox/VBoxContainer"]
+margin_top = 102.0
+margin_right = 1182.0
+margin_bottom = 132.0
+rect_min_size = Vector2( 286, 30 )
+
+[node name="Nome" type="Label" parent="MargemEXT/MargemINT/MargemAtrExt/InfoBox/VBoxContainer/CA"]
+margin_top = 4.0
+margin_right = 1153.0
+margin_bottom = 25.0
+size_flags_horizontal = 3
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Classe de Armadura:"
+
+[node name="Valor" type="Label" parent="MargemEXT/MargemINT/MargemAtrExt/InfoBox/VBoxContainer/CA"]
+margin_left = 1157.0
+margin_top = 4.0
+margin_right = 1182.0
+margin_bottom = 25.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "18"
+
+[node name="Talentos" type="Control" parent="MargemEXT/MargemINT"]
+visible = false
+margin_top = 485.0
+margin_right = 1536.0
+margin_bottom = 966.0
+mouse_filter = 2
+size_flags_vertical = 3
+
+[node name="LinhaTalento" type="HBoxContainer" parent="MargemEXT/MargemINT/Talentos"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/separation = 0
+
+[node name="ArvoreTalento" type="HBoxContainer" parent="MargemEXT/MargemINT/Talentos"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/separation = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento"]
+margin_right = 30.0
+margin_bottom = 481.0
+rect_min_size = Vector2( 30, 0 )
+
+[node name="1circulo" type="VBoxContainer" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento"]
+margin_left = 30.0
+margin_right = 90.0
+margin_bottom = 481.0
+rect_min_size = Vector2( 60, 0 )
+custom_constants/separation = 0
+
+[node name="1a" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/1circulo"]
+margin_right = 60.0
+margin_bottom = 60.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/1circulo/1a"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/1circulo/1a/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/1circulo/1a"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+hint_tooltip = "Resumo do primeiro talento"
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="2a" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/1circulo"]
+margin_top = 60.0
+margin_right = 60.0
+margin_bottom = 120.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/1circulo/2a"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/1circulo/2a/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/1circulo/2a"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="3a" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/1circulo"]
+margin_top = 120.0
+margin_right = 60.0
+margin_bottom = 180.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/1circulo/3a"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/1circulo/3a/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/1circulo/3a"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="4a" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/1circulo"]
+margin_top = 180.0
+margin_right = 60.0
+margin_bottom = 240.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/1circulo/4a"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/1circulo/4a/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/1circulo/4a"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="5a" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/1circulo"]
+margin_top = 240.0
+margin_right = 60.0
+margin_bottom = 300.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/1circulo/5a"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/1circulo/5a/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/1circulo/5a"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="6a" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/1circulo"]
+margin_top = 300.0
+margin_right = 60.0
+margin_bottom = 360.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/1circulo/6a"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/1circulo/6a/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/1circulo/6a"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="7a" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/1circulo"]
+margin_top = 360.0
+margin_right = 60.0
+margin_bottom = 420.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/1circulo/7a"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/1circulo/7a/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/1circulo/7a"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="8a" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/1circulo"]
+margin_top = 420.0
+margin_right = 60.0
+margin_bottom = 480.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/1circulo/8a"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/1circulo/8a/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/1circulo/8a"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="MarginContainer8" type="MarginContainer" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento"]
+margin_left = 90.0
+margin_right = 120.0
+margin_bottom = 481.0
+rect_min_size = Vector2( 30, 0 )
+
+[node name="2circulo" type="VBoxContainer" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento"]
+margin_left = 120.0
+margin_right = 180.0
+margin_bottom = 481.0
+rect_min_size = Vector2( 60, 0 )
+custom_constants/separation = 0
+
+[node name="1b" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/2circulo"]
+margin_right = 60.0
+margin_bottom = 60.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/2circulo/1b"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/2circulo/1b/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/2circulo/1b"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="2b" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/2circulo"]
+margin_top = 60.0
+margin_right = 60.0
+margin_bottom = 120.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/2circulo/2b"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/2circulo/2b/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/2circulo/2b"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="3b" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/2circulo"]
+margin_top = 120.0
+margin_right = 60.0
+margin_bottom = 180.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/2circulo/3b"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/2circulo/3b/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/2circulo/3b"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="4b" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/2circulo"]
+margin_top = 180.0
+margin_right = 60.0
+margin_bottom = 240.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/2circulo/4b"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/2circulo/4b/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/2circulo/4b"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="5b" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/2circulo"]
+margin_top = 240.0
+margin_right = 60.0
+margin_bottom = 300.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/2circulo/5b"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/2circulo/5b/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/2circulo/5b"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="6b" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/2circulo"]
+margin_top = 300.0
+margin_right = 60.0
+margin_bottom = 360.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/2circulo/6b"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/2circulo/6b/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/2circulo/6b"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="7b" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/2circulo"]
+margin_top = 360.0
+margin_right = 60.0
+margin_bottom = 420.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/2circulo/7b"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/2circulo/7b/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/2circulo/7b"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="8b" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/2circulo"]
+margin_top = 420.0
+margin_right = 60.0
+margin_bottom = 480.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/2circulo/8b"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/2circulo/8b/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/2circulo/8b"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="MarginContainer7" type="MarginContainer" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento"]
+margin_left = 180.0
+margin_right = 210.0
+margin_bottom = 481.0
+rect_min_size = Vector2( 30, 0 )
+
+[node name="3circulo" type="VBoxContainer" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento"]
+margin_left = 210.0
+margin_right = 270.0
+margin_bottom = 481.0
+rect_min_size = Vector2( 60, 0 )
+custom_constants/separation = 0
+
+[node name="1c" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/3circulo"]
+margin_right = 60.0
+margin_bottom = 60.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/3circulo/1c"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/3circulo/1c/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/3circulo/1c"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="2c" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/3circulo"]
+margin_top = 60.0
+margin_right = 60.0
+margin_bottom = 120.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/3circulo/2c"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/3circulo/2c/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/3circulo/2c"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="3c" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/3circulo"]
+margin_top = 120.0
+margin_right = 60.0
+margin_bottom = 180.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/3circulo/3c"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/3circulo/3c/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/3circulo/3c"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="4c" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/3circulo"]
+margin_top = 180.0
+margin_right = 60.0
+margin_bottom = 240.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/3circulo/4c"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/3circulo/4c/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/3circulo/4c"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="5c" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/3circulo"]
+margin_top = 240.0
+margin_right = 60.0
+margin_bottom = 300.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/3circulo/5c"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/3circulo/5c/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/3circulo/5c"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="6c" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/3circulo"]
+margin_top = 300.0
+margin_right = 60.0
+margin_bottom = 360.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/3circulo/6c"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/3circulo/6c/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/3circulo/6c"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="7c" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/3circulo"]
+margin_top = 360.0
+margin_right = 60.0
+margin_bottom = 420.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/3circulo/7c"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/3circulo/7c/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/3circulo/7c"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="8c" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/3circulo"]
+margin_top = 420.0
+margin_right = 60.0
+margin_bottom = 480.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/3circulo/8c"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/3circulo/8c/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/3circulo/8c"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="MarginContainer6" type="MarginContainer" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento"]
+margin_left = 270.0
+margin_right = 300.0
+margin_bottom = 481.0
+rect_min_size = Vector2( 30, 0 )
+
+[node name="4circulo" type="VBoxContainer" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento"]
+margin_left = 300.0
+margin_right = 360.0
+margin_bottom = 481.0
+rect_min_size = Vector2( 60, 0 )
+custom_constants/separation = 0
+
+[node name="1d" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/4circulo"]
+margin_right = 60.0
+margin_bottom = 60.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/4circulo/1d"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/4circulo/1d/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/4circulo/1d"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="2d" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/4circulo"]
+margin_top = 60.0
+margin_right = 60.0
+margin_bottom = 120.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/4circulo/2d"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/4circulo/2d/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/4circulo/2d"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="3d" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/4circulo"]
+margin_top = 120.0
+margin_right = 60.0
+margin_bottom = 180.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/4circulo/3d"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/4circulo/3d/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/4circulo/3d"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="4d" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/4circulo"]
+margin_top = 180.0
+margin_right = 60.0
+margin_bottom = 240.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/4circulo/4d"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/4circulo/4d/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/4circulo/4d"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="5d" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/4circulo"]
+margin_top = 240.0
+margin_right = 60.0
+margin_bottom = 300.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/4circulo/5d"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/4circulo/5d/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/4circulo/5d"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="6d" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/4circulo"]
+margin_top = 300.0
+margin_right = 60.0
+margin_bottom = 360.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/4circulo/6d"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/4circulo/6d/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/4circulo/6d"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="7d" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/4circulo"]
+margin_top = 360.0
+margin_right = 60.0
+margin_bottom = 420.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/4circulo/7d"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/4circulo/7d/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/4circulo/7d"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="8d" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/4circulo"]
+margin_top = 420.0
+margin_right = 60.0
+margin_bottom = 480.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/4circulo/8d"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/4circulo/8d/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/4circulo/8d"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="MarginContainer5" type="MarginContainer" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento"]
+margin_left = 360.0
+margin_right = 390.0
+margin_bottom = 481.0
+rect_min_size = Vector2( 30, 0 )
+
+[node name="5circulo" type="VBoxContainer" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento"]
+margin_left = 390.0
+margin_right = 450.0
+margin_bottom = 481.0
+rect_min_size = Vector2( 60, 0 )
+custom_constants/separation = 0
+
+[node name="1e" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/5circulo"]
+margin_right = 60.0
+margin_bottom = 60.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/5circulo/1e"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/5circulo/1e/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/5circulo/1e"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="2e" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/5circulo"]
+margin_top = 60.0
+margin_right = 60.0
+margin_bottom = 120.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/5circulo/2e"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/5circulo/2e/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/5circulo/2e"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="3e" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/5circulo"]
+margin_top = 120.0
+margin_right = 60.0
+margin_bottom = 180.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/5circulo/3e"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/5circulo/3e/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/5circulo/3e"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="4e" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/5circulo"]
+margin_top = 180.0
+margin_right = 60.0
+margin_bottom = 240.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/5circulo/4e"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/5circulo/4e/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/5circulo/4e"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="5e" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/5circulo"]
+margin_top = 240.0
+margin_right = 60.0
+margin_bottom = 300.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/5circulo/5e"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/5circulo/5e/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/5circulo/5e"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="6e" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/5circulo"]
+margin_top = 300.0
+margin_right = 60.0
+margin_bottom = 360.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/5circulo/6e"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/5circulo/6e/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/5circulo/6e"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="7e" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/5circulo"]
+margin_top = 360.0
+margin_right = 60.0
+margin_bottom = 420.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/5circulo/7e"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/5circulo/7e/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/5circulo/7e"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="8e" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/5circulo"]
+margin_top = 420.0
+margin_right = 60.0
+margin_bottom = 480.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/5circulo/8e"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 30, 30 )
+texture = ExtResource( 23 )
+expand = true
+
+[node name="Tween" type="Tween" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/5circulo/8e/TextureRect"]
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/5circulo/8e"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="MarginContainer4" type="MarginContainer" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento"]
+margin_left = 450.0
+margin_right = 480.0
+margin_bottom = 481.0
+rect_min_size = Vector2( 30, 0 )
+
+[node name="6circulo" type="VBoxContainer" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento"]
+margin_left = 480.0
+margin_right = 540.0
+margin_bottom = 481.0
+rect_min_size = Vector2( 60, 0 )
+custom_constants/separation = 0
+
+[node name="1f" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/6circulo"]
+margin_right = 60.0
+margin_bottom = 60.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/6circulo/1f"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="2f" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/6circulo"]
+margin_top = 60.0
+margin_right = 60.0
+margin_bottom = 120.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/6circulo/2f"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="3f" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/6circulo"]
+margin_top = 120.0
+margin_right = 60.0
+margin_bottom = 180.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/6circulo/3f"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="4f" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/6circulo"]
+margin_top = 180.0
+margin_right = 60.0
+margin_bottom = 240.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/6circulo/4f"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="5f" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/6circulo"]
+margin_top = 240.0
+margin_right = 60.0
+margin_bottom = 300.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/6circulo/5f"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="6f" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/6circulo"]
+margin_top = 300.0
+margin_right = 60.0
+margin_bottom = 360.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/6circulo/6f"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="7f" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/6circulo"]
+margin_top = 360.0
+margin_right = 60.0
+margin_bottom = 420.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/6circulo/7f"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="8f" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/6circulo"]
+margin_top = 420.0
+margin_right = 60.0
+margin_bottom = 480.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/6circulo/8f"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="MarginContainer3" type="MarginContainer" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento"]
+margin_left = 540.0
+margin_right = 570.0
+margin_bottom = 481.0
+rect_min_size = Vector2( 30, 0 )
+
+[node name="7circulo" type="VBoxContainer" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento"]
+margin_left = 570.0
+margin_right = 630.0
+margin_bottom = 481.0
+rect_min_size = Vector2( 60, 0 )
+custom_constants/separation = 0
+
+[node name="1g" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/7circulo"]
+margin_right = 60.0
+margin_bottom = 60.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/7circulo/1g"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="2g" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/7circulo"]
+margin_top = 60.0
+margin_right = 60.0
+margin_bottom = 120.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/7circulo/2g"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="3g" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/7circulo"]
+margin_top = 120.0
+margin_right = 60.0
+margin_bottom = 180.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/7circulo/3g"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="4g" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/7circulo"]
+margin_top = 180.0
+margin_right = 60.0
+margin_bottom = 240.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/7circulo/4g"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="5g" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/7circulo"]
+margin_top = 240.0
+margin_right = 60.0
+margin_bottom = 300.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/7circulo/5g"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="6g" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/7circulo"]
+margin_top = 300.0
+margin_right = 60.0
+margin_bottom = 360.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/7circulo/6g"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="7g" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/7circulo"]
+margin_top = 360.0
+margin_right = 60.0
+margin_bottom = 420.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/7circulo/7g"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="8g" type="TextureRect" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/7circulo"]
+margin_top = 420.0
+margin_right = 60.0
+margin_bottom = 480.0
+rect_min_size = Vector2( 60, 60 )
+texture = ExtResource( 20 )
+expand = true
+
+[node name="TextureButton" type="TextureButton" parent="MargemEXT/MargemINT/Talentos/ArvoreTalento/7circulo/8g"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+texture_disabled = ExtResource( 22 )
+expand = true
+
+[node name="Botoes" type="HBoxContainer" parent="MargemEXT/MargemINT"]
+margin_top = 970.0
+margin_right = 1536.0
+margin_bottom = 1020.0
+rect_min_size = Vector2( 0, 50 )
+
+[node name="Atributos" type="TextureButton" parent="MargemEXT/MargemINT/Botoes"]
+margin_right = 180.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 180, 50 )
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 8 )
+expand = true
+
+[node name="Label" type="Label" parent="MargemEXT/MargemINT/Botoes/Atributos"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 14 )
+text = "Atributos"
+align = 1
+valign = 1
+
+[node name="Equipamentos" type="TextureButton" parent="MargemEXT/MargemINT/Botoes"]
+margin_left = 184.0
+margin_right = 384.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 200, 50 )
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 8 )
+expand = true
+
+[node name="Label" type="Label" parent="MargemEXT/MargemINT/Botoes/Equipamentos"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 14 )
+text = "Equipamentos"
+align = 1
+valign = 1
+
+[node name="Talentos" type="TextureButton" parent="MargemEXT/MargemINT/Botoes"]
+margin_left = 388.0
+margin_right = 568.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 180, 50 )
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 8 )
+expand = true
+
+[node name="Label" type="Label" parent="MargemEXT/MargemINT/Botoes/Talentos"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 14 )
+text = "Talentos"
+align = 1
+valign = 1
+
+[node name="Frufru" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="TE" type="TextureRect" parent="Frufru"]
+margin_right = 100.0
+margin_bottom = 75.0
+texture = ExtResource( 5 )
+expand = true
+
+[node name="TD" type="TextureRect" parent="Frufru"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -100.0
+margin_bottom = 75.0
+texture = ExtResource( 5 )
+expand = true
+flip_h = true
+
+[node name="BD" type="TextureRect" parent="Frufru"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -100.0
+margin_top = -75.0
+texture = ExtResource( 5 )
+expand = true
+flip_h = true
+flip_v = true
+
+[node name="BE" type="TextureRect" parent="Frufru"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -75.0
+margin_right = 100.0
+texture = ExtResource( 5 )
+expand = true
+flip_v = true
+
+[connection signal="pressed" from="MargemEXT/MargemINT/MargemAtrExt/Atributos/Pontos/Confirmar" to="." method="_on_Confirmar_pressed"]
+[connection signal="pressed" from="MargemEXT/MargemINT/Botoes/Atributos" to="." method="_on_Atributos_pressed"]
+[connection signal="pressed" from="MargemEXT/MargemINT/Botoes/Talentos" to="." method="_on_Talentos_pressed"]

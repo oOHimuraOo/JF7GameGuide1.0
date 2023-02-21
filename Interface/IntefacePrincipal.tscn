@@ -1,0 +1,1810 @@
+[gd_scene load_steps=55 format=2]
+
+[ext_resource path="res://Texturas/f1f77e7e98732ac4beff3e27a40d2db5.png" type="Texture" id=1]
+[ext_resource path="res://Texturas/InterfaceBG.png" type="Texture" id=2]
+[ext_resource path="res://Texturas/RetratoBG.png" type="Texture" id=3]
+[ext_resource path="res://Texturas/BotaoAvancPressed.png" type="Texture" id=4]
+[ext_resource path="res://Texturas/Botao1a6Disabled.png" type="Texture" id=5]
+[ext_resource path="res://Texturas/Botao1a6NotPressed.png" type="Texture" id=6]
+[ext_resource path="res://Texturas/Botao1a6Pressed.png" type="Texture" id=7]
+[ext_resource path="res://Texturas/Botao7a11Disabled.png" type="Texture" id=8]
+[ext_resource path="res://Texturas/BotaoAvancDisabled.png" type="Texture" id=9]
+[ext_resource path="res://Texturas/BotaoNegDisabled.png" type="Texture" id=10]
+[ext_resource path="res://Texturas/BotaoNegNotPressed.png" type="Texture" id=11]
+[ext_resource path="res://Texturas/BotaoReturnDisabled.png" type="Texture" id=12]
+[ext_resource path="res://Texturas/BotaoAvancNotPressed.png" type="Texture" id=13]
+[ext_resource path="res://Texturas/BotaoReturnNotPressed.png" type="Texture" id=14]
+[ext_resource path="res://Texturas/BotaoReturnPressed.png" type="Texture" id=15]
+[ext_resource path="res://Texturas/ResetarAtributosPressed.png" type="Texture" id=16]
+[ext_resource path="res://Texturas/BotaoPosPressed.png" type="Texture" id=17]
+[ext_resource path="res://Texturas/ResetarAtributosNotPressed.png" type="Texture" id=18]
+[ext_resource path="res://Texturas/Botao7a11NotPressed.png" type="Texture" id=19]
+[ext_resource path="res://Texturas/BotaoPosDisabled.png" type="Texture" id=20]
+[ext_resource path="res://Texturas/BotaoNegPressed.png" type="Texture" id=21]
+[ext_resource path="res://Texturas/BotaoPosNotPressed.png" type="Texture" id=22]
+[ext_resource path="res://Texturas/Botao7a11Pressed.png" type="Texture" id=23]
+[ext_resource path="res://Texturas/RolarAtrPressed.png" type="Texture" id=24]
+[ext_resource path="res://Texturas/InfoBoxBG.png" type="Texture" id=25]
+[ext_resource path="res://Texturas/RolarAtrNotPressed.png" type="Texture" id=26]
+[ext_resource path="res://Texturas/PontosDisponiveisBG.png" type="Texture" id=27]
+[ext_resource path="res://Texturas/ResetarAtributosDisabled.png" type="Texture" id=28]
+[ext_resource path="res://Texturas/AtributoBG.png" type="Texture" id=29]
+[ext_resource path="res://Texturas/RolarAtrDisabled.png" type="Texture" id=30]
+[ext_resource path="res://Interface/Script/IntefacePrincipal.gd" type="Script" id=31]
+[ext_resource path="res://Tipografias/COPRGTB.TTF" type="DynamicFontData" id=32]
+[ext_resource path="res://Racas/Racas.tscn" type="PackedScene" id=33]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+use_filter = true
+font_data = ExtResource( 32 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 25
+use_filter = true
+font_data = ExtResource( 32 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 20
+font_data = ExtResource( 32 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 20
+font_data = ExtResource( 32 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 20
+font_data = ExtResource( 32 )
+
+[sub_resource type="DynamicFont" id=16]
+size = 30
+font_data = ExtResource( 32 )
+
+[sub_resource type="DynamicFont" id=14]
+size = 30
+font_data = ExtResource( 32 )
+
+[sub_resource type="DynamicFont" id=15]
+size = 30
+font_data = ExtResource( 32 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 20
+font_data = ExtResource( 32 )
+
+[sub_resource type="DynamicFont" id=17]
+size = 20
+use_filter = true
+font_data = ExtResource( 32 )
+
+[sub_resource type="DynamicFont" id=18]
+size = 20
+use_filter = true
+font_data = ExtResource( 32 )
+
+[sub_resource type="DynamicFont" id=19]
+size = 20
+use_filter = true
+font_data = ExtResource( 32 )
+
+[sub_resource type="DynamicFont" id=20]
+size = 20
+use_filter = true
+font_data = ExtResource( 32 )
+
+[sub_resource type="DynamicFont" id=21]
+size = 20
+use_filter = true
+font_data = ExtResource( 32 )
+
+[sub_resource type="DynamicFont" id=13]
+size = 40
+font_data = ExtResource( 32 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 20
+font_data = ExtResource( 32 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 30
+font_data = ExtResource( 32 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 30
+font_data = ExtResource( 32 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 30
+font_data = ExtResource( 32 )
+
+[sub_resource type="DynamicFont" id=11]
+size = 30
+font_data = ExtResource( 32 )
+
+[sub_resource type="DynamicFont" id=12]
+size = 30
+font_data = ExtResource( 32 )
+
+[node name="IntefacePrincipal" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 31 )
+
+[node name="InterfaceBG" type="NinePatchRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+patch_margin_left = 30
+patch_margin_top = 30
+patch_margin_right = 30
+patch_margin_bottom = 30
+
+[node name="BoxDelimitadoraV1" type="HBoxContainer" parent="InterfaceBG"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 30.0
+margin_top = 30.0
+margin_right = -30.0
+margin_bottom = -30.0
+
+[node name="BoxDelimitadoraH1" type="VBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1"]
+margin_right = 504.0
+margin_bottom = 1021.0
+rect_min_size = Vector2( 500, 0 )
+
+[node name="RetratoBG" type="NinePatchRect" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1"]
+margin_right = 504.0
+margin_bottom = 708.0
+size_flags_vertical = 3
+texture = ExtResource( 3 )
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="Retrato" type="TextureRect" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/RetratoBG"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -235.0
+margin_top = -337.0
+margin_right = 234.0
+margin_bottom = 339.0
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 6
+
+[node name="BoxDelimitadoraH2" type="VBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1"]
+margin_top = 712.0
+margin_right = 504.0
+margin_bottom = 1021.0
+rect_min_size = Vector2( 0, 300 )
+
+[node name="BoxDelimitadorV2" type="HBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2"]
+margin_right = 504.0
+margin_bottom = 309.0
+size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2"]
+margin_right = 10.0
+margin_bottom = 309.0
+rect_min_size = Vector2( 10, 0 )
+
+[node name="BotaoMenuRetornar" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2" groups=["BotaoRetornar"]]
+margin_left = 14.0
+margin_right = 64.0
+margin_bottom = 309.0
+rect_min_size = Vector2( 50, 0 )
+disabled = true
+texture_normal = ExtResource( 14 )
+texture_pressed = ExtResource( 15 )
+texture_disabled = ExtResource( 12 )
+
+[node name="Menu_Pg1" type="VBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2"]
+margin_left = 68.0
+margin_right = 436.0
+margin_bottom = 309.0
+size_flags_horizontal = 3
+
+[node name="Raça_Classe" type="HBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg1"]
+margin_right = 368.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 0, 100 )
+
+[node name="BoxDelimitadoraV4" type="HBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg1/Raça_Classe"]
+margin_right = 180.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 180, 0 )
+
+[node name="Raca" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg1/Raça_Classe/BoxDelimitadoraV4"]
+margin_right = 180.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+texture_disabled = ExtResource( 5 )
+expand = true
+
+[node name="Raca" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg1/Raça_Classe/BoxDelimitadoraV4/Raca"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 1 )
+text = "Raça"
+align = 1
+valign = 1
+
+[node name="Espaçador1" type="MarginContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg1/Raça_Classe"]
+margin_left = 184.0
+margin_right = 184.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+
+[node name="BoxDelimitadoraV5" type="HBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg1/Raça_Classe"]
+margin_left = 188.0
+margin_right = 368.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 180, 0 )
+
+[node name="Classe" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg1/Raça_Classe/BoxDelimitadoraV5"]
+margin_right = 180.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+texture_disabled = ExtResource( 8 )
+expand = true
+
+[node name="Classe" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg1/Raça_Classe/BoxDelimitadoraV5/Classe"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 2 )
+text = "Classe"
+align = 1
+valign = 1
+
+[node name="Antecedentes_Personalidade" type="HBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg1"]
+margin_top = 104.0
+margin_right = 368.0
+margin_bottom = 204.0
+rect_min_size = Vector2( 0, 100 )
+
+[node name="BoxDelimitadoraV7" type="HBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg1/Antecedentes_Personalidade"]
+margin_right = 180.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 180, 0 )
+
+[node name="Antecedentes" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg1/Antecedentes_Personalidade/BoxDelimitadoraV7"]
+margin_right = 180.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+texture_disabled = ExtResource( 5 )
+expand = true
+
+[node name="Antecedentes" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg1/Antecedentes_Personalidade/BoxDelimitadoraV7/Antecedentes"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 3 )
+text = "Antecedentes"
+align = 1
+valign = 1
+
+[node name="Espaçador2" type="MarginContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg1/Antecedentes_Personalidade"]
+margin_left = 184.0
+margin_right = 184.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+
+[node name="BoxDelimitadoraV8" type="HBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg1/Antecedentes_Personalidade"]
+margin_left = 188.0
+margin_right = 368.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 180, 0 )
+
+[node name="Personalidade" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg1/Antecedentes_Personalidade/BoxDelimitadoraV8"]
+margin_right = 180.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+texture_disabled = ExtResource( 5 )
+expand = true
+
+[node name="Personalidade" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg1/Antecedentes_Personalidade/BoxDelimitadoraV8/Personalidade"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 4 )
+text = "Personalidade"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+
+[node name="QuaDef_Pericia" type="HBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg1"]
+margin_top = 208.0
+margin_right = 368.0
+margin_bottom = 308.0
+rect_min_size = Vector2( 0, 100 )
+
+[node name="BoxDelimitadoraV10" type="HBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg1/QuaDef_Pericia"]
+margin_right = 180.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 180, 0 )
+
+[node name="Qualidades_e_Defeitos" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg1/QuaDef_Pericia/BoxDelimitadoraV10"]
+margin_right = 180.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+texture_disabled = ExtResource( 5 )
+expand = true
+
+[node name="Qualiddades_e_Defeitos" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg1/QuaDef_Pericia/BoxDelimitadoraV10/Qualidades_e_Defeitos"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 5 )
+text = "Qualidades
+e
+defeitos"
+align = 1
+valign = 1
+
+[node name="Espaçador3" type="MarginContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg1/QuaDef_Pericia"]
+margin_left = 184.0
+margin_right = 184.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+
+[node name="BoxDelimitadoraV11" type="HBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg1/QuaDef_Pericia"]
+margin_left = 188.0
+margin_right = 368.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 180, 0 )
+
+[node name="Pericia" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg1/QuaDef_Pericia/BoxDelimitadoraV11"]
+margin_right = 180.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+texture_disabled = ExtResource( 5 )
+
+[node name="Pericia" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg1/QuaDef_Pericia/BoxDelimitadoraV11/Pericia"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 16 )
+text = "Perícia"
+align = 1
+valign = 1
+
+[node name="Menu_Pg2" type="VBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2"]
+visible = false
+margin_left = 68.0
+margin_right = 436.0
+margin_bottom = 309.0
+size_flags_horizontal = 3
+
+[node name="Talento_MagiCoin" type="HBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg2"]
+margin_right = 368.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 0, 100 )
+
+[node name="BoxDelimitadoraV4" type="HBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg2/Talento_MagiCoin"]
+margin_right = 180.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 180, 0 )
+
+[node name="Talentos" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg2/Talento_MagiCoin/BoxDelimitadoraV4"]
+margin_right = 180.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+texture_disabled = ExtResource( 5 )
+expand = true
+
+[node name="Talentos" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg2/Talento_MagiCoin/BoxDelimitadoraV4/Talentos"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 1 )
+text = "Talentos"
+align = 1
+valign = 1
+
+[node name="Espaçador1" type="MarginContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg2/Talento_MagiCoin"]
+margin_left = 184.0
+margin_right = 184.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+
+[node name="BoxDelimitadoraV5" type="HBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg2/Talento_MagiCoin"]
+margin_left = 188.0
+margin_right = 368.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 180, 0 )
+
+[node name="Magia_Coicidente" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg2/Talento_MagiCoin/BoxDelimitadoraV5"]
+margin_right = 180.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+texture_disabled = ExtResource( 8 )
+expand = true
+
+[node name="Magia_Coincidente" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg2/Talento_MagiCoin/BoxDelimitadoraV5/Magia_Coicidente"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 2 )
+text = "Magia
+Coicidente"
+align = 1
+valign = 1
+
+[node name="MagiVul_Equip" type="HBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg2"]
+margin_top = 104.0
+margin_right = 368.0
+margin_bottom = 204.0
+rect_min_size = Vector2( 0, 100 )
+
+[node name="BoxDelimitadoraV7" type="HBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg2/MagiVul_Equip"]
+margin_right = 180.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 180, 0 )
+
+[node name="Magia Vulgar" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg2/MagiVul_Equip/BoxDelimitadoraV7"]
+margin_right = 180.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+texture_disabled = ExtResource( 5 )
+expand = true
+
+[node name="Magia Vulgar" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg2/MagiVul_Equip/BoxDelimitadoraV7/Magia Vulgar"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 14 )
+text = "Magia
+Vulgar"
+align = 1
+valign = 1
+
+[node name="Espaçador2" type="MarginContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg2/MagiVul_Equip"]
+margin_left = 184.0
+margin_right = 184.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+
+[node name="BoxDelimitadoraV8" type="HBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg2/MagiVul_Equip"]
+margin_left = 188.0
+margin_right = 368.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 180, 0 )
+
+[node name="Equipamentos" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg2/MagiVul_Equip/BoxDelimitadoraV8"]
+margin_right = 180.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+texture_disabled = ExtResource( 5 )
+expand = true
+
+[node name="Equipamentos" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg2/MagiVul_Equip/BoxDelimitadoraV8/Equipamentos"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 4 )
+text = "Equipamentos"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+
+[node name="Esferas_QuinPara" type="HBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg2"]
+margin_top = 208.0
+margin_right = 368.0
+margin_bottom = 308.0
+rect_min_size = Vector2( 0, 100 )
+
+[node name="BoxDelimitadoraV10" type="HBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg2/Esferas_QuinPara"]
+margin_right = 180.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 180, 0 )
+
+[node name="Esferas" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg2/Esferas_QuinPara/BoxDelimitadoraV10"]
+margin_right = 180.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+texture_disabled = ExtResource( 5 )
+expand = true
+
+[node name="Esferas" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg2/Esferas_QuinPara/BoxDelimitadoraV10/Esferas"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 15 )
+text = "Esferas"
+align = 1
+valign = 1
+
+[node name="Espaçador3" type="MarginContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg2/Esferas_QuinPara"]
+margin_left = 184.0
+margin_right = 184.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+
+[node name="BoxDelimitadoraV11" type="HBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg2/Esferas_QuinPara"]
+margin_left = 188.0
+margin_right = 368.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 180, 0 )
+
+[node name="Quintessencia e Paradoxo" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg2/Esferas_QuinPara/BoxDelimitadoraV11"]
+margin_right = 180.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+texture_disabled = ExtResource( 5 )
+
+[node name="Quintessencia e Paradoxo" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg2/Esferas_QuinPara/BoxDelimitadoraV11/Quintessencia e Paradoxo"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 6 )
+text = "Quintessencia
+e
+Paradoxo"
+align = 1
+valign = 1
+
+[node name="BotaoMenuAvancar" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2" groups=["BotaoAvancar"]]
+margin_left = 440.0
+margin_right = 490.0
+margin_bottom = 309.0
+rect_min_size = Vector2( 50, 0 )
+texture_normal = ExtResource( 13 )
+texture_pressed = ExtResource( 4 )
+texture_disabled = ExtResource( 9 )
+expand = true
+
+[node name="MarginContainer2" type="MarginContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2"]
+margin_left = 494.0
+margin_right = 504.0
+margin_bottom = 309.0
+rect_min_size = Vector2( 10, 0 )
+
+[node name="BoxDelimitadoraH4" type="VBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1"]
+margin_left = 508.0
+margin_right = 1874.0
+margin_bottom = 1021.0
+size_flags_horizontal = 3
+
+[node name="BoxDelimitadoraV12" type="HBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4"]
+margin_right = 1366.0
+margin_bottom = 917.0
+size_flags_vertical = 3
+
+[node name="BoxDelimitadoraH5" type="VBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12"]
+margin_right = 400.0
+margin_bottom = 917.0
+rect_min_size = Vector2( 400, 0 )
+
+[node name="Espaçador4" type="MarginContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5"]
+margin_right = 400.0
+margin_bottom = 70.0
+rect_min_size = Vector2( 0, 70 )
+
+[node name="For" type="Control" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5"]
+margin_top = 74.0
+margin_right = 400.0
+margin_bottom = 124.0
+rect_min_size = Vector2( 0, 50 )
+
+[node name="BotaoNeg" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/For" groups=["BotaoNeg"]]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 25, 50 )
+disabled = true
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 21 )
+texture_disabled = ExtResource( 10 )
+expand = true
+
+[node name="AtributoBG" type="TextureRect" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/For"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 25.0
+margin_top = -25.0
+margin_right = 325.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 300, 0 )
+texture = ExtResource( 29 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="BoxDelimitadoraV13" type="HBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/For/AtributoBG"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -147.0
+margin_top = -22.5
+margin_right = 149.0
+margin_bottom = 22.5
+
+[node name="Atributo" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/For/AtributoBG/BoxDelimitadoraV13"]
+margin_right = 100.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 5
+custom_fonts/font = SubResource( 17 )
+text = "For"
+align = 1
+valign = 1
+
+[node name="Mudanca" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/For/AtributoBG/BoxDelimitadoraV13"]
+margin_left = 104.0
+margin_right = 149.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 45, 45 )
+custom_fonts/font = SubResource( 18 )
+align = 1
+valign = 1
+
+[node name="Valor" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/For/AtributoBG/BoxDelimitadoraV13"]
+margin_left = 153.0
+margin_right = 198.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 45, 45 )
+custom_fonts/font = SubResource( 19 )
+align = 1
+valign = 1
+
+[node name="Bonif_Temp" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/For/AtributoBG/BoxDelimitadoraV13"]
+margin_left = 202.0
+margin_right = 247.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 45, 45 )
+custom_fonts/font = SubResource( 20 )
+align = 1
+valign = 1
+
+[node name="Modificador" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/For/AtributoBG/BoxDelimitadoraV13"]
+margin_left = 251.0
+margin_right = 296.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 45, 45 )
+custom_fonts/font = SubResource( 21 )
+align = 1
+valign = 1
+
+[node name="BotaoPos" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/For" groups=["BotaoPos"]]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 325.0
+margin_top = -25.0
+margin_right = 350.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 25, 50 )
+disabled = true
+texture_normal = ExtResource( 22 )
+texture_pressed = ExtResource( 17 )
+texture_disabled = ExtResource( 20 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="RolarAtr" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/For" groups=["RolarAtributos"]]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 350.0
+margin_top = -25.0
+margin_right = 400.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 25, 50 )
+disabled = true
+texture_normal = ExtResource( 26 )
+texture_pressed = ExtResource( 24 )
+texture_disabled = ExtResource( 30 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Espaçador5" type="MarginContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5"]
+margin_top = 128.0
+margin_right = 400.0
+margin_bottom = 158.0
+rect_min_size = Vector2( 0, 30 )
+
+[node name="Des" type="Control" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5"]
+margin_top = 162.0
+margin_right = 400.0
+margin_bottom = 212.0
+rect_min_size = Vector2( 0, 50 )
+
+[node name="BotaoNeg" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Des" groups=["BotaoNeg"]]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 25, 50 )
+disabled = true
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 21 )
+texture_disabled = ExtResource( 10 )
+expand = true
+
+[node name="AtributoBG" type="TextureRect" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Des"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 25.0
+margin_top = -25.0
+margin_right = 325.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 300, 0 )
+texture = ExtResource( 29 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="BoxDelimitadoraV13" type="HBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Des/AtributoBG"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -147.0
+margin_top = -22.5
+margin_right = 149.0
+margin_bottom = 22.5
+
+[node name="Atributo" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Des/AtributoBG/BoxDelimitadoraV13"]
+margin_right = 100.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 5
+custom_fonts/font = SubResource( 17 )
+text = "Des"
+align = 1
+valign = 1
+
+[node name="Mudanca" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Des/AtributoBG/BoxDelimitadoraV13"]
+margin_left = 104.0
+margin_right = 149.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 45, 45 )
+custom_fonts/font = SubResource( 18 )
+align = 1
+valign = 1
+
+[node name="Valor" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Des/AtributoBG/BoxDelimitadoraV13"]
+margin_left = 153.0
+margin_right = 198.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 45, 45 )
+custom_fonts/font = SubResource( 19 )
+align = 1
+valign = 1
+
+[node name="Bonif_Temp" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Des/AtributoBG/BoxDelimitadoraV13"]
+margin_left = 202.0
+margin_right = 247.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 45, 45 )
+custom_fonts/font = SubResource( 20 )
+align = 1
+valign = 1
+
+[node name="Modificador" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Des/AtributoBG/BoxDelimitadoraV13"]
+margin_left = 251.0
+margin_right = 296.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 45, 45 )
+custom_fonts/font = SubResource( 21 )
+align = 1
+valign = 1
+
+[node name="BotaoPos" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Des" groups=["BotaoPos"]]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 325.0
+margin_top = -25.0
+margin_right = 350.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 25, 50 )
+disabled = true
+texture_normal = ExtResource( 22 )
+texture_pressed = ExtResource( 17 )
+texture_disabled = ExtResource( 20 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="RolarAtr" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Des" groups=["RolarAtributos"]]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 350.0
+margin_top = -25.0
+margin_right = 400.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 25, 50 )
+disabled = true
+texture_normal = ExtResource( 26 )
+texture_pressed = ExtResource( 24 )
+texture_disabled = ExtResource( 30 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Espaçador6" type="MarginContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5"]
+margin_top = 216.0
+margin_right = 400.0
+margin_bottom = 246.0
+rect_min_size = Vector2( 0, 30 )
+
+[node name="Con" type="Control" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5"]
+margin_top = 250.0
+margin_right = 400.0
+margin_bottom = 300.0
+rect_min_size = Vector2( 0, 50 )
+
+[node name="BotaoNeg" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Con" groups=["BotaoNeg"]]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 25, 50 )
+disabled = true
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 21 )
+texture_disabled = ExtResource( 10 )
+expand = true
+
+[node name="AtributoBG" type="TextureRect" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Con"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 25.0
+margin_top = -25.0
+margin_right = 325.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 300, 0 )
+texture = ExtResource( 29 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="BoxDelimitadoraV13" type="HBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Con/AtributoBG"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -147.0
+margin_top = -22.5
+margin_right = 149.0
+margin_bottom = 22.5
+
+[node name="Atributo" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Con/AtributoBG/BoxDelimitadoraV13"]
+margin_right = 100.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 5
+custom_fonts/font = SubResource( 17 )
+text = "Con"
+align = 1
+valign = 1
+
+[node name="Mudanca" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Con/AtributoBG/BoxDelimitadoraV13"]
+margin_left = 104.0
+margin_right = 149.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 45, 45 )
+custom_fonts/font = SubResource( 18 )
+align = 1
+valign = 1
+
+[node name="Valor" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Con/AtributoBG/BoxDelimitadoraV13"]
+margin_left = 153.0
+margin_right = 198.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 45, 45 )
+custom_fonts/font = SubResource( 19 )
+align = 1
+valign = 1
+
+[node name="Bonif_Temp" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Con/AtributoBG/BoxDelimitadoraV13"]
+margin_left = 202.0
+margin_right = 247.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 45, 45 )
+custom_fonts/font = SubResource( 20 )
+align = 1
+valign = 1
+
+[node name="Modificador" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Con/AtributoBG/BoxDelimitadoraV13"]
+margin_left = 251.0
+margin_right = 296.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 45, 45 )
+custom_fonts/font = SubResource( 21 )
+align = 1
+valign = 1
+
+[node name="BotaoPos" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Con" groups=["BotaoPos"]]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 325.0
+margin_top = -25.0
+margin_right = 350.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 25, 50 )
+disabled = true
+texture_normal = ExtResource( 22 )
+texture_pressed = ExtResource( 17 )
+texture_disabled = ExtResource( 20 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="RolarAtr" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Con" groups=["RolarAtributos"]]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 350.0
+margin_top = -25.0
+margin_right = 400.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 25, 50 )
+disabled = true
+texture_normal = ExtResource( 26 )
+texture_pressed = ExtResource( 24 )
+texture_disabled = ExtResource( 30 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Espaçador7" type="MarginContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5"]
+margin_top = 304.0
+margin_right = 400.0
+margin_bottom = 334.0
+rect_min_size = Vector2( 0, 30 )
+
+[node name="Hon" type="Control" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5"]
+margin_top = 338.0
+margin_right = 400.0
+margin_bottom = 388.0
+rect_min_size = Vector2( 0, 50 )
+
+[node name="BotaoNeg" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Hon" groups=["BotaoNeg"]]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 25, 50 )
+disabled = true
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 21 )
+texture_disabled = ExtResource( 10 )
+expand = true
+
+[node name="AtributoBG" type="TextureRect" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Hon"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 25.0
+margin_top = -25.0
+margin_right = 325.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 300, 0 )
+texture = ExtResource( 29 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="BoxDelimitadoraV13" type="HBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Hon/AtributoBG"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -147.0
+margin_top = -22.5
+margin_right = 149.0
+margin_bottom = 22.5
+
+[node name="Atributo" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Hon/AtributoBG/BoxDelimitadoraV13"]
+margin_right = 100.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 5
+custom_fonts/font = SubResource( 17 )
+text = "Hon"
+align = 1
+valign = 1
+
+[node name="Mudanca" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Hon/AtributoBG/BoxDelimitadoraV13"]
+margin_left = 104.0
+margin_right = 149.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 45, 45 )
+custom_fonts/font = SubResource( 18 )
+align = 1
+valign = 1
+
+[node name="Valor" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Hon/AtributoBG/BoxDelimitadoraV13"]
+margin_left = 153.0
+margin_right = 198.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 45, 45 )
+custom_fonts/font = SubResource( 19 )
+align = 1
+valign = 1
+
+[node name="Bonif_Temp" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Hon/AtributoBG/BoxDelimitadoraV13"]
+margin_left = 202.0
+margin_right = 247.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 45, 45 )
+custom_fonts/font = SubResource( 20 )
+align = 1
+valign = 1
+
+[node name="Modificador" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Hon/AtributoBG/BoxDelimitadoraV13"]
+margin_left = 251.0
+margin_right = 296.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 45, 45 )
+custom_fonts/font = SubResource( 21 )
+align = 1
+valign = 1
+
+[node name="BotaoPos" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Hon" groups=["BotaoPos"]]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 325.0
+margin_top = -25.0
+margin_right = 350.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 25, 50 )
+disabled = true
+texture_normal = ExtResource( 22 )
+texture_pressed = ExtResource( 17 )
+texture_disabled = ExtResource( 20 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="RolarAtr" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Hon" groups=["RolarAtributos"]]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 350.0
+margin_top = -25.0
+margin_right = 400.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 25, 50 )
+disabled = true
+texture_normal = ExtResource( 26 )
+texture_pressed = ExtResource( 24 )
+texture_disabled = ExtResource( 30 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Espaçador8" type="MarginContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5"]
+margin_top = 392.0
+margin_right = 400.0
+margin_bottom = 422.0
+rect_min_size = Vector2( 0, 30 )
+
+[node name="San" type="Control" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5"]
+margin_top = 426.0
+margin_right = 400.0
+margin_bottom = 476.0
+rect_min_size = Vector2( 0, 50 )
+
+[node name="BotaoNeg" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/San" groups=["BotaoNeg"]]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 25, 50 )
+disabled = true
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 21 )
+texture_disabled = ExtResource( 10 )
+expand = true
+
+[node name="AtributoBG" type="TextureRect" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/San"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 25.0
+margin_top = -25.0
+margin_right = 325.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 300, 0 )
+texture = ExtResource( 29 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="BoxDelimitadoraV13" type="HBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/San/AtributoBG"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -147.0
+margin_top = -22.5
+margin_right = 149.0
+margin_bottom = 22.5
+
+[node name="Atributo" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/San/AtributoBG/BoxDelimitadoraV13"]
+margin_right = 100.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 5
+custom_fonts/font = SubResource( 17 )
+text = "San"
+align = 1
+valign = 1
+
+[node name="Mudanca" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/San/AtributoBG/BoxDelimitadoraV13"]
+margin_left = 104.0
+margin_right = 149.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 45, 45 )
+custom_fonts/font = SubResource( 18 )
+align = 1
+valign = 1
+
+[node name="Valor" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/San/AtributoBG/BoxDelimitadoraV13"]
+margin_left = 153.0
+margin_right = 198.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 45, 45 )
+custom_fonts/font = SubResource( 19 )
+align = 1
+valign = 1
+
+[node name="Bonif_Temp" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/San/AtributoBG/BoxDelimitadoraV13"]
+margin_left = 202.0
+margin_right = 247.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 45, 45 )
+custom_fonts/font = SubResource( 20 )
+align = 1
+valign = 1
+
+[node name="Modificador" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/San/AtributoBG/BoxDelimitadoraV13"]
+margin_left = 251.0
+margin_right = 296.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 45, 45 )
+custom_fonts/font = SubResource( 21 )
+align = 1
+valign = 1
+
+[node name="BotaoPos" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/San" groups=["BotaoPos"]]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 325.0
+margin_top = -25.0
+margin_right = 350.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 25, 50 )
+disabled = true
+texture_normal = ExtResource( 22 )
+texture_pressed = ExtResource( 17 )
+texture_disabled = ExtResource( 20 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="RolarAtr" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/San" groups=["RolarAtributos"]]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 350.0
+margin_top = -25.0
+margin_right = 400.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 25, 50 )
+disabled = true
+texture_normal = ExtResource( 26 )
+texture_pressed = ExtResource( 24 )
+texture_disabled = ExtResource( 30 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Espaçador9" type="MarginContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5"]
+margin_top = 480.0
+margin_right = 400.0
+margin_bottom = 510.0
+rect_min_size = Vector2( 0, 30 )
+
+[node name="Sab" type="Control" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5"]
+margin_top = 514.0
+margin_right = 400.0
+margin_bottom = 564.0
+rect_min_size = Vector2( 0, 50 )
+
+[node name="BotaoNeg" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Sab" groups=["BotaoNeg"]]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 25, 50 )
+disabled = true
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 21 )
+texture_disabled = ExtResource( 10 )
+expand = true
+
+[node name="AtributoBG" type="TextureRect" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Sab"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 25.0
+margin_top = -25.0
+margin_right = 325.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 300, 0 )
+texture = ExtResource( 29 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="BoxDelimitadoraV13" type="HBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Sab/AtributoBG"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -147.0
+margin_top = -22.5
+margin_right = 149.0
+margin_bottom = 22.5
+
+[node name="Atributo" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Sab/AtributoBG/BoxDelimitadoraV13"]
+margin_right = 100.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 5
+custom_fonts/font = SubResource( 17 )
+text = "Sab"
+align = 1
+valign = 1
+
+[node name="Mudanca" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Sab/AtributoBG/BoxDelimitadoraV13"]
+margin_left = 104.0
+margin_right = 149.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 45, 45 )
+custom_fonts/font = SubResource( 18 )
+align = 1
+valign = 1
+
+[node name="Valor" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Sab/AtributoBG/BoxDelimitadoraV13"]
+margin_left = 153.0
+margin_right = 198.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 45, 45 )
+custom_fonts/font = SubResource( 19 )
+align = 1
+valign = 1
+
+[node name="Bonif_Temp" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Sab/AtributoBG/BoxDelimitadoraV13"]
+margin_left = 202.0
+margin_right = 247.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 45, 45 )
+custom_fonts/font = SubResource( 20 )
+align = 1
+valign = 1
+
+[node name="Modificador" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Sab/AtributoBG/BoxDelimitadoraV13"]
+margin_left = 251.0
+margin_right = 296.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 45, 45 )
+custom_fonts/font = SubResource( 21 )
+align = 1
+valign = 1
+
+[node name="BotaoPos" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Sab" groups=["BotaoPos"]]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 325.0
+margin_top = -25.0
+margin_right = 350.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 25, 50 )
+disabled = true
+texture_normal = ExtResource( 22 )
+texture_pressed = ExtResource( 17 )
+texture_disabled = ExtResource( 20 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="RolarAtr" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Sab" groups=["RolarAtributos"]]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 350.0
+margin_top = -25.0
+margin_right = 400.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 25, 50 )
+disabled = true
+texture_normal = ExtResource( 26 )
+texture_pressed = ExtResource( 24 )
+texture_disabled = ExtResource( 30 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Espaçador10" type="MarginContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5"]
+margin_top = 568.0
+margin_right = 400.0
+margin_bottom = 598.0
+rect_min_size = Vector2( 0, 30 )
+
+[node name="Int" type="Control" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5"]
+margin_top = 602.0
+margin_right = 400.0
+margin_bottom = 652.0
+rect_min_size = Vector2( 0, 50 )
+
+[node name="BotaoNeg" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Int" groups=["BotaoNeg"]]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 25, 50 )
+disabled = true
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 21 )
+texture_disabled = ExtResource( 10 )
+expand = true
+
+[node name="AtributoBG" type="TextureRect" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Int"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 25.0
+margin_top = -25.0
+margin_right = 325.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 300, 0 )
+texture = ExtResource( 29 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="BoxDelimitadoraV13" type="HBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Int/AtributoBG"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -147.0
+margin_top = -22.5
+margin_right = 149.0
+margin_bottom = 22.5
+
+[node name="Atributo" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Int/AtributoBG/BoxDelimitadoraV13"]
+margin_right = 100.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 5
+custom_fonts/font = SubResource( 17 )
+text = "Int"
+align = 1
+valign = 1
+
+[node name="Mudanca" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Int/AtributoBG/BoxDelimitadoraV13"]
+margin_left = 104.0
+margin_right = 149.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 45, 45 )
+custom_fonts/font = SubResource( 18 )
+align = 1
+valign = 1
+
+[node name="Valor" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Int/AtributoBG/BoxDelimitadoraV13"]
+margin_left = 153.0
+margin_right = 198.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 45, 45 )
+custom_fonts/font = SubResource( 19 )
+align = 1
+valign = 1
+
+[node name="Bonif_Temp" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Int/AtributoBG/BoxDelimitadoraV13"]
+margin_left = 202.0
+margin_right = 247.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 45, 45 )
+custom_fonts/font = SubResource( 20 )
+align = 1
+valign = 1
+
+[node name="Modificador" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Int/AtributoBG/BoxDelimitadoraV13"]
+margin_left = 251.0
+margin_right = 296.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 45, 45 )
+custom_fonts/font = SubResource( 21 )
+align = 1
+valign = 1
+
+[node name="BotaoPos" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Int" groups=["BotaoPos"]]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 325.0
+margin_top = -25.0
+margin_right = 350.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 25, 50 )
+disabled = true
+texture_normal = ExtResource( 22 )
+texture_pressed = ExtResource( 17 )
+texture_disabled = ExtResource( 20 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="RolarAtr" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Int" groups=["RolarAtributos"]]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 350.0
+margin_top = -25.0
+margin_right = 400.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 25, 50 )
+disabled = true
+texture_normal = ExtResource( 26 )
+texture_pressed = ExtResource( 24 )
+texture_disabled = ExtResource( 30 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Espaçador11" type="MarginContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5"]
+margin_top = 656.0
+margin_right = 400.0
+margin_bottom = 686.0
+rect_min_size = Vector2( 0, 30 )
+
+[node name="Car" type="Control" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5"]
+margin_top = 690.0
+margin_right = 400.0
+margin_bottom = 740.0
+rect_min_size = Vector2( 0, 50 )
+
+[node name="BotaoNeg" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Car" groups=["BotaoNeg"]]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = -25.0
+margin_right = 25.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 25, 50 )
+disabled = true
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 21 )
+texture_disabled = ExtResource( 10 )
+expand = true
+
+[node name="AtributoBG" type="TextureRect" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Car"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 25.0
+margin_top = -25.0
+margin_right = 325.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 300, 0 )
+texture = ExtResource( 29 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="BoxDelimitadoraV13" type="HBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Car/AtributoBG"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -147.0
+margin_top = -22.5
+margin_right = 149.0
+margin_bottom = 22.5
+
+[node name="Atributo" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Car/AtributoBG/BoxDelimitadoraV13"]
+margin_right = 100.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 5
+custom_fonts/font = SubResource( 17 )
+text = "Car"
+align = 1
+valign = 1
+
+[node name="Mudanca" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Car/AtributoBG/BoxDelimitadoraV13"]
+margin_left = 104.0
+margin_right = 149.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 45, 45 )
+custom_fonts/font = SubResource( 18 )
+align = 1
+valign = 1
+
+[node name="Valor" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Car/AtributoBG/BoxDelimitadoraV13"]
+margin_left = 153.0
+margin_right = 198.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 45, 45 )
+custom_fonts/font = SubResource( 19 )
+align = 1
+valign = 1
+
+[node name="Bonif_Temp" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Car/AtributoBG/BoxDelimitadoraV13"]
+margin_left = 202.0
+margin_right = 247.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 45, 45 )
+custom_fonts/font = SubResource( 20 )
+align = 1
+valign = 1
+
+[node name="Modificador" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Car/AtributoBG/BoxDelimitadoraV13"]
+margin_left = 251.0
+margin_right = 296.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 45, 45 )
+custom_fonts/font = SubResource( 21 )
+align = 1
+valign = 1
+
+[node name="BotaoPos" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Car" groups=["BotaoPos"]]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 325.0
+margin_top = -25.0
+margin_right = 350.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 25, 50 )
+disabled = true
+texture_normal = ExtResource( 22 )
+texture_pressed = ExtResource( 17 )
+texture_disabled = ExtResource( 20 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="RolarAtr" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/Car" groups=["RolarAtributos"]]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 350.0
+margin_top = -25.0
+margin_right = 400.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 25, 50 )
+disabled = true
+texture_normal = ExtResource( 26 )
+texture_pressed = ExtResource( 24 )
+texture_disabled = ExtResource( 30 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Espaçador12" type="MarginContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5"]
+margin_top = 744.0
+margin_right = 400.0
+margin_bottom = 774.0
+rect_min_size = Vector2( 0, 30 )
+
+[node name="BoxDelimitadoraV21" type="HBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5"]
+margin_top = 778.0
+margin_right = 400.0
+margin_bottom = 853.0
+rect_min_size = Vector2( 0, 75 )
+
+[node name="PontosDisponiveisBG" type="TextureRect" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/BoxDelimitadoraV21"]
+margin_right = 246.0
+margin_bottom = 75.0
+size_flags_horizontal = 3
+texture = ExtResource( 27 )
+expand = true
+
+[node name="PontosDisponiveis" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/BoxDelimitadoraV21/PontosDisponiveisBG"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -121.0
+margin_top = -37.5
+margin_right = 121.0
+margin_bottom = 37.5
+size_flags_horizontal = 3
+size_flags_vertical = 5
+custom_fonts/font = SubResource( 13 )
+align = 1
+valign = 1
+
+[node name="ResetarAtributos" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/BoxDelimitadoraV21"]
+margin_left = 250.0
+margin_right = 400.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 150, 0 )
+disabled = true
+texture_normal = ExtResource( 18 )
+texture_pressed = ExtResource( 16 )
+texture_disabled = ExtResource( 28 )
+expand = true
+
+[node name="ResetarAtributosNome" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH5/BoxDelimitadoraV21/ResetarAtributos"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 80, 75 )
+custom_fonts/font = SubResource( 7 )
+text = "Resetar 
+Atributos"
+align = 1
+valign = 1
+
+[node name="BoxDelimitadoraH6" type="VBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12"]
+margin_left = 404.0
+margin_right = 1366.0
+margin_bottom = 917.0
+rect_min_size = Vector2( 400, 0 )
+size_flags_horizontal = 3
+
+[node name="InfoBoxBG" type="TextureRect" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH6"]
+margin_right = 962.0
+margin_bottom = 917.0
+size_flags_horizontal = 3
+texture = ExtResource( 25 )
+
+[node name="NinePatchRect" type="NinePatchRect" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH6/InfoBoxBG"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
+
+[node name="Racas" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV12/BoxDelimitadoraH6/InfoBoxBG/NinePatchRect" instance=ExtResource( 33 )]
+visible = false
+
+[node name="BoxDelimitadoraV23" type="HBoxContainer" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4"]
+margin_top = 921.0
+margin_right = 1366.0
+margin_bottom = 1021.0
+rect_min_size = Vector2( 0, 100 )
+
+[node name="Novo_Personagem" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV23" groups=["NovoPersonagem"]]
+margin_right = 270.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 270, 0 )
+texture_normal = ExtResource( 19 )
+texture_pressed = ExtResource( 23 )
+texture_disabled = ExtResource( 8 )
+expand = true
+
+[node name="Novo_Personagem" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV23/Novo_Personagem"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 8 )
+text = "Novo 
+Personagem"
+align = 1
+valign = 1
+
+[node name="Botao8" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV23"]
+margin_left = 274.0
+margin_right = 544.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 270, 0 )
+texture_normal = ExtResource( 19 )
+texture_pressed = ExtResource( 23 )
+texture_disabled = ExtResource( 8 )
+expand = true
+
+[node name="NomeBotao8" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV23/Botao8"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 9 )
+text = "Carregar
+Personagem"
+align = 1
+valign = 1
+
+[node name="Botao9" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV23"]
+margin_left = 548.0
+margin_right = 818.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 270, 0 )
+texture_normal = ExtResource( 19 )
+texture_pressed = ExtResource( 23 )
+texture_disabled = ExtResource( 8 )
+expand = true
+
+[node name="NomeBotao9" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV23/Botao9"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 10 )
+text = "Apagar 
+Personagem"
+align = 1
+valign = 1
+
+[node name="Botao10" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV23"]
+margin_left = 822.0
+margin_right = 1092.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 270, 0 )
+texture_normal = ExtResource( 19 )
+texture_pressed = ExtResource( 23 )
+texture_disabled = ExtResource( 8 )
+expand = true
+
+[node name="NomeBotao10" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV23/Botao10"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 11 )
+text = "Salvar
+Personagem"
+align = 1
+valign = 1
+
+[node name="Botao11" type="TextureButton" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV23"]
+margin_left = 1096.0
+margin_right = 1366.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 270, 0 )
+texture_normal = ExtResource( 19 )
+texture_pressed = ExtResource( 23 )
+texture_disabled = ExtResource( 8 )
+expand = true
+
+[node name="NomeBotao11" type="Label" parent="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV23/Botao11"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 12 )
+text = "Exportar"
+align = 1
+valign = 1
+autowrap = true
+
+[connection signal="pressed" from="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/BotaoMenuRetornar" to="." method="_on_BotaoMenuRetornar_pressed"]
+[connection signal="pressed" from="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/Menu_Pg1/Raça_Classe/BoxDelimitadoraV4/Raca" to="." method="_on_Raca_pressed"]
+[connection signal="pressed" from="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH1/BoxDelimitadoraH2/BoxDelimitadorV2/BotaoMenuAvancar" to="." method="_on_BotaoMenuAvancar_pressed"]
+[connection signal="pressed" from="InterfaceBG/BoxDelimitadoraV1/BoxDelimitadoraH4/BoxDelimitadoraV23/Novo_Personagem" to="." method="_on_Novo_Personagem_pressed"]

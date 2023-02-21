@@ -1,0 +1,629 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Racas/script/Racas.gd" type="Script" id=1]
+[ext_resource path="res://Tipografias/COPRGTB.TTF" type="DynamicFontData" id=2]
+[ext_resource path="res://Tipografias/COPRGTL.TTF" type="DynamicFontData" id=3]
+[ext_resource path="res://Texturas/Botão1a3InfoBoxDisabled.png" type="Texture" id=4]
+[ext_resource path="res://Texturas/BotaoInfoBoxAvancarDisabled.png" type="Texture" id=5]
+[ext_resource path="res://Texturas/Botão1a3InfoBoxNotPressed.png" type="Texture" id=6]
+[ext_resource path="res://Texturas/BotaoInfoBoxAvancarNotPressed.png" type="Texture" id=7]
+[ext_resource path="res://Texturas/BotaoInfoBoxAvancarPressed.png" type="Texture" id=8]
+[ext_resource path="res://Texturas/Botão1a3InfoBoxPressed.png" type="Texture" id=9]
+[ext_resource path="res://Tipografias/TituloRacas.tres" type="DynamicFont" id=10]
+
+[sub_resource type="DynamicFont" id=3]
+size = 30
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 12
+use_filter = true
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 20
+use_filter = true
+font_data = ExtResource( 2 )
+
+[node name="Racas" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_right = 942.0
+margin_bottom = 897.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+margin_right = 958.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 0, 50 )
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer"]
+margin_right = 171.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 171, 0 )
+
+[node name="TextureButton2" type="TextureButton" parent="VBoxContainer/HBoxContainer"]
+margin_left = 175.0
+margin_right = 275.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 100, 0 )
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 8 )
+texture_disabled = ExtResource( 5 )
+expand = true
+
+[node name="OptionButton" type="OptionButton" parent="VBoxContainer/HBoxContainer"]
+margin_left = 279.0
+margin_right = 679.0
+margin_bottom = 50.0
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 3 )
+align = 1
+expand_icon = true
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/HBoxContainer"]
+margin_left = 683.0
+margin_right = 783.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 100, 0 )
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 8 )
+texture_disabled = ExtResource( 5 )
+expand = true
+flip_h = true
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/HBoxContainer"]
+margin_left = 787.0
+margin_right = 958.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 171, 0 )
+
+[node name="RacasContainer" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 54.0
+margin_right = 958.0
+margin_bottom = 843.0
+size_flags_vertical = 3
+
+[node name="InfoRacas" type="ScrollContainer" parent="VBoxContainer/RacasContainer"]
+margin_right = 958.0
+margin_bottom = 789.0
+size_flags_horizontal = 3
+scroll_horizontal_enabled = false
+
+[node name="Info" type="VBoxContainer" parent="VBoxContainer/RacasContainer/InfoRacas"]
+margin_right = 946.0
+margin_bottom = 2104.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/RacasContainer/InfoRacas/Info"]
+margin_right = 946.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 0, 100 )
+
+[node name="Titulo1" type="Label" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer"]
+margin_right = 946.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 10 )
+align = 1
+valign = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/RacasContainer/InfoRacas/Info"]
+margin_top = 104.0
+margin_right = 946.0
+margin_bottom = 2104.0
+rect_min_size = Vector2( 0, 1000 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2"]
+margin_right = 468.0
+margin_bottom = 2000.0
+rect_min_size = Vector2( 0, 2000 )
+
+[node name="Texto1" type="RichTextLabel" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer"]
+margin_right = 468.0
+margin_bottom = 15.0
+size_flags_vertical = 0
+custom_fonts/normal_font = SubResource( 1 )
+fit_content_height = true
+
+[node name="Titulo2" type="Label" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer"]
+margin_top = 19.0
+margin_right = 468.0
+margin_bottom = 44.0
+rect_min_size = Vector2( 468, 25 )
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+autowrap = true
+clip_text = true
+
+[node name="Texto2" type="RichTextLabel" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer"]
+margin_top = 48.0
+margin_right = 468.0
+margin_bottom = 63.0
+size_flags_vertical = 0
+custom_fonts/normal_font = SubResource( 1 )
+fit_content_height = true
+
+[node name="Titulo3" type="Label" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer"]
+margin_top = 67.0
+margin_right = 468.0
+margin_bottom = 92.0
+rect_min_size = Vector2( 468, 25 )
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+autowrap = true
+clip_text = true
+
+[node name="Texto3" type="RichTextLabel" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer"]
+margin_top = 96.0
+margin_right = 468.0
+margin_bottom = 111.0
+size_flags_vertical = 0
+custom_fonts/normal_font = SubResource( 1 )
+fit_content_height = true
+
+[node name="Titulo4" type="Label" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer"]
+margin_top = 115.0
+margin_right = 468.0
+margin_bottom = 140.0
+rect_min_size = Vector2( 468, 25 )
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+autowrap = true
+clip_text = true
+
+[node name="Texto4" type="RichTextLabel" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer"]
+margin_top = 144.0
+margin_right = 468.0
+margin_bottom = 159.0
+size_flags_vertical = 0
+custom_fonts/normal_font = SubResource( 1 )
+fit_content_height = true
+
+[node name="Titulo5" type="Label" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer"]
+margin_top = 163.0
+margin_right = 468.0
+margin_bottom = 188.0
+rect_min_size = Vector2( 468, 25 )
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+autowrap = true
+clip_text = true
+
+[node name="Texto5" type="RichTextLabel" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer"]
+margin_top = 192.0
+margin_right = 468.0
+margin_bottom = 207.0
+size_flags_vertical = 0
+custom_fonts/normal_font = SubResource( 1 )
+fit_content_height = true
+
+[node name="Titulo6" type="Label" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer"]
+margin_top = 211.0
+margin_right = 468.0
+margin_bottom = 236.0
+rect_min_size = Vector2( 468, 25 )
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+autowrap = true
+clip_text = true
+
+[node name="Texto6" type="RichTextLabel" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer"]
+margin_top = 240.0
+margin_right = 468.0
+margin_bottom = 255.0
+size_flags_vertical = 0
+custom_fonts/normal_font = SubResource( 1 )
+fit_content_height = true
+
+[node name="Titulo7" type="Label" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer"]
+margin_top = 259.0
+margin_right = 468.0
+margin_bottom = 284.0
+rect_min_size = Vector2( 468, 25 )
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+autowrap = true
+clip_text = true
+
+[node name="Texto7" type="RichTextLabel" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer"]
+margin_top = 288.0
+margin_right = 468.0
+margin_bottom = 303.0
+size_flags_vertical = 0
+custom_fonts/normal_font = SubResource( 1 )
+fit_content_height = true
+
+[node name="Titulo8" type="Label" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer"]
+margin_top = 307.0
+margin_right = 468.0
+margin_bottom = 332.0
+rect_min_size = Vector2( 468, 25 )
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+autowrap = true
+clip_text = true
+
+[node name="Texto8" type="RichTextLabel" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer"]
+margin_top = 336.0
+margin_right = 468.0
+margin_bottom = 351.0
+size_flags_vertical = 0
+custom_fonts/normal_font = SubResource( 1 )
+fit_content_height = true
+
+[node name="Titulo9" type="Label" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer"]
+margin_top = 355.0
+margin_right = 468.0
+margin_bottom = 380.0
+rect_min_size = Vector2( 468, 25 )
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+autowrap = true
+clip_text = true
+
+[node name="Texto9" type="RichTextLabel" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer"]
+margin_top = 384.0
+margin_right = 468.0
+margin_bottom = 399.0
+size_flags_vertical = 0
+custom_fonts/normal_font = SubResource( 1 )
+fit_content_height = true
+
+[node name="Titulo10" type="Label" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer"]
+margin_top = 403.0
+margin_right = 468.0
+margin_bottom = 428.0
+rect_min_size = Vector2( 468, 25 )
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+autowrap = true
+clip_text = true
+
+[node name="Texto10" type="RichTextLabel" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer"]
+margin_top = 432.0
+margin_right = 468.0
+margin_bottom = 447.0
+size_flags_vertical = 0
+custom_fonts/normal_font = SubResource( 1 )
+fit_content_height = true
+
+[node name="Titulo11" type="Label" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer"]
+margin_top = 451.0
+margin_right = 468.0
+margin_bottom = 476.0
+rect_min_size = Vector2( 468, 25 )
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+autowrap = true
+clip_text = true
+
+[node name="Texto11" type="RichTextLabel" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer"]
+margin_top = 480.0
+margin_right = 468.0
+margin_bottom = 495.0
+size_flags_vertical = 0
+custom_fonts/normal_font = SubResource( 1 )
+fit_content_height = true
+
+[node name="Titulo12" type="Label" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer"]
+margin_top = 499.0
+margin_right = 468.0
+margin_bottom = 524.0
+rect_min_size = Vector2( 468, 25 )
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+autowrap = true
+clip_text = true
+
+[node name="Texto12" type="RichTextLabel" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer"]
+margin_top = 528.0
+margin_right = 468.0
+margin_bottom = 543.0
+size_flags_vertical = 0
+custom_fonts/normal_font = SubResource( 1 )
+fit_content_height = true
+
+[node name="Titulo13" type="Label" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer"]
+margin_top = 547.0
+margin_right = 468.0
+margin_bottom = 572.0
+rect_min_size = Vector2( 468, 25 )
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+autowrap = true
+clip_text = true
+
+[node name="Texto13" type="RichTextLabel" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer"]
+margin_top = 576.0
+margin_right = 468.0
+margin_bottom = 591.0
+size_flags_vertical = 0
+custom_fonts/normal_font = SubResource( 1 )
+fit_content_height = true
+
+[node name="Titulo14" type="Label" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer"]
+margin_top = 595.0
+margin_right = 468.0
+margin_bottom = 620.0
+rect_min_size = Vector2( 468, 25 )
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+autowrap = true
+clip_text = true
+
+[node name="Texto14" type="RichTextLabel" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer"]
+margin_top = 624.0
+margin_right = 468.0
+margin_bottom = 639.0
+size_flags_vertical = 0
+custom_fonts/normal_font = SubResource( 1 )
+fit_content_height = true
+
+[node name="Titulo15" type="Label" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer"]
+margin_top = 643.0
+margin_right = 468.0
+margin_bottom = 668.0
+rect_min_size = Vector2( 468, 25 )
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+autowrap = true
+clip_text = true
+
+[node name="Texto15" type="RichTextLabel" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer"]
+margin_top = 672.0
+margin_right = 468.0
+margin_bottom = 687.0
+size_flags_vertical = 0
+custom_fonts/normal_font = SubResource( 1 )
+fit_content_height = true
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2"]
+margin_left = 472.0
+margin_right = 940.0
+margin_bottom = 2000.0
+rect_min_size = Vector2( 468, 0 )
+
+[node name="Imagem1" type="TextureRect" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer2"]
+margin_right = 468.0
+margin_bottom = 630.0
+rect_min_size = Vector2( 468, 630 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+expand = true
+stretch_mode = 6
+
+[node name="Titulo16" type="Label" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer2"]
+margin_top = 634.0
+margin_right = 468.0
+margin_bottom = 659.0
+rect_min_size = Vector2( 468, 25 )
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+autowrap = true
+clip_text = true
+
+[node name="Texto16" type="RichTextLabel" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer2"]
+margin_top = 663.0
+margin_right = 468.0
+margin_bottom = 678.0
+size_flags_vertical = 0
+custom_fonts/normal_font = SubResource( 1 )
+fit_content_height = true
+
+[node name="Titulo17" type="Label" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer2"]
+margin_top = 682.0
+margin_right = 468.0
+margin_bottom = 707.0
+rect_min_size = Vector2( 468, 25 )
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+autowrap = true
+clip_text = true
+
+[node name="Texto17" type="RichTextLabel" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer2"]
+margin_top = 711.0
+margin_right = 468.0
+margin_bottom = 726.0
+size_flags_vertical = 0
+custom_fonts/normal_font = SubResource( 1 )
+fit_content_height = true
+
+[node name="Titulo18" type="Label" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer2"]
+margin_top = 730.0
+margin_right = 468.0
+margin_bottom = 755.0
+rect_min_size = Vector2( 468, 25 )
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+autowrap = true
+clip_text = true
+
+[node name="Texto18" type="RichTextLabel" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer2"]
+margin_top = 759.0
+margin_right = 468.0
+margin_bottom = 774.0
+size_flags_vertical = 0
+custom_fonts/normal_font = SubResource( 1 )
+fit_content_height = true
+
+[node name="Titulo19" type="Label" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer2"]
+margin_top = 778.0
+margin_right = 468.0
+margin_bottom = 803.0
+rect_min_size = Vector2( 468, 25 )
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+autowrap = true
+clip_text = true
+
+[node name="Texto19" type="RichTextLabel" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer2"]
+margin_top = 807.0
+margin_right = 468.0
+margin_bottom = 822.0
+size_flags_vertical = 0
+custom_fonts/normal_font = SubResource( 1 )
+fit_content_height = true
+
+[node name="Titulo20" type="Label" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer2"]
+margin_top = 826.0
+margin_right = 468.0
+margin_bottom = 851.0
+rect_min_size = Vector2( 468, 25 )
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+autowrap = true
+clip_text = true
+
+[node name="Texto20" type="RichTextLabel" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer2"]
+margin_top = 855.0
+margin_right = 468.0
+margin_bottom = 870.0
+size_flags_vertical = 0
+custom_fonts/normal_font = SubResource( 1 )
+fit_content_height = true
+
+[node name="Titulo21" type="Label" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer2"]
+margin_top = 874.0
+margin_right = 468.0
+margin_bottom = 899.0
+rect_min_size = Vector2( 468, 25 )
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+autowrap = true
+clip_text = true
+
+[node name="Texto21" type="RichTextLabel" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer2"]
+margin_top = 903.0
+margin_right = 468.0
+margin_bottom = 918.0
+size_flags_vertical = 0
+custom_fonts/normal_font = SubResource( 1 )
+fit_content_height = true
+
+[node name="Titulo22" type="Label" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer2"]
+margin_top = 922.0
+margin_right = 468.0
+margin_bottom = 947.0
+rect_min_size = Vector2( 468, 25 )
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+autowrap = true
+clip_text = true
+
+[node name="Texto22" type="RichTextLabel" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer2"]
+margin_top = 951.0
+margin_right = 468.0
+margin_bottom = 966.0
+size_flags_vertical = 0
+custom_fonts/normal_font = SubResource( 1 )
+fit_content_height = true
+
+[node name="Titulo23" type="Label" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer2"]
+margin_top = 970.0
+margin_right = 468.0
+margin_bottom = 995.0
+rect_min_size = Vector2( 468, 25 )
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+autowrap = true
+clip_text = true
+
+[node name="Texto23" type="RichTextLabel" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer2"]
+margin_top = 999.0
+margin_right = 468.0
+margin_bottom = 1014.0
+size_flags_vertical = 0
+custom_fonts/normal_font = SubResource( 1 )
+fit_content_height = true
+
+[node name="Titulo24" type="Label" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer2"]
+margin_top = 1018.0
+margin_right = 468.0
+margin_bottom = 1043.0
+rect_min_size = Vector2( 468, 25 )
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+autowrap = true
+clip_text = true
+
+[node name="Texto24" type="RichTextLabel" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer2"]
+margin_top = 1047.0
+margin_right = 468.0
+margin_bottom = 1062.0
+size_flags_vertical = 0
+custom_fonts/normal_font = SubResource( 1 )
+fit_content_height = true
+
+[node name="Titulo25" type="Label" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer2"]
+margin_top = 1066.0
+margin_right = 468.0
+margin_bottom = 1091.0
+rect_min_size = Vector2( 468, 25 )
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 2 )
+autowrap = true
+clip_text = true
+
+[node name="Texto25" type="RichTextLabel" parent="VBoxContainer/RacasContainer/InfoRacas/Info/HBoxContainer2/VBoxContainer2"]
+margin_top = 1095.0
+margin_right = 468.0
+margin_bottom = 1110.0
+size_flags_vertical = 0
+custom_fonts/normal_font = SubResource( 1 )
+fit_content_height = true
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 847.0
+margin_right = 958.0
+margin_bottom = 897.0
+rect_min_size = Vector2( 0, 50 )
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer3"]
+margin_right = 21.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 21, 0 )
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/HBoxContainer3"]
+margin_left = 25.0
+margin_right = 325.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 300, 0 )
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 9 )
+texture_disabled = ExtResource( 4 )
+expand = true
+
+[node name="TextureButton2" type="TextureButton" parent="VBoxContainer/HBoxContainer3"]
+margin_left = 329.0
+margin_right = 629.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 300, 0 )
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 9 )
+texture_disabled = ExtResource( 4 )
+expand = true
+
+[node name="TextureButton3" type="TextureButton" parent="VBoxContainer/HBoxContainer3"]
+margin_left = 633.0
+margin_right = 933.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 300, 0 )
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 9 )
+texture_disabled = ExtResource( 4 )
+expand = true
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/HBoxContainer3"]
+margin_left = 937.0
+margin_right = 958.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 21, 0 )
+
+[connection signal="item_selected" from="VBoxContainer/HBoxContainer/OptionButton" to="." method="_on_OptionButton_item_selected"]
