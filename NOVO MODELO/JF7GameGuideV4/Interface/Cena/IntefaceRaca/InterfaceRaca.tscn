@@ -1,0 +1,407 @@
+[gd_scene load_steps=24 format=3 uid="uid://b48eit3al4bqe"]
+
+[ext_resource type="Script" path="res://Interface/Script/IntefaceRaca/InterfaceRaca.gd" id="1_wyewi"]
+
+[sub_resource type="Gradient" id="Gradient_rwrim"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_a6j0g"]
+gradient = SubResource("Gradient_rwrim")
+
+[sub_resource type="Gradient" id="Gradient_4n14o"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_wma7a"]
+gradient = SubResource("Gradient_4n14o")
+
+[sub_resource type="Gradient" id="Gradient_cp856"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_tal2d"]
+gradient = SubResource("Gradient_cp856")
+
+[sub_resource type="Gradient" id="Gradient_evnjm"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_t454u"]
+gradient = SubResource("Gradient_evnjm")
+
+[sub_resource type="Gradient" id="Gradient_r68su"]
+colors = PackedColorArray(1, 0, 0, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_u4cg2"]
+gradient = SubResource("Gradient_r68su")
+
+[sub_resource type="Gradient" id="Gradient_1ag82"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_x0dxi"]
+gradient = SubResource("Gradient_1ag82")
+
+[sub_resource type="Gradient" id="Gradient_lj54r"]
+colors = PackedColorArray(0, 1, 0, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_hj4iy"]
+gradient = SubResource("Gradient_lj54r")
+
+[sub_resource type="Gradient" id="Gradient_dykyv"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_yiwty"]
+gradient = SubResource("Gradient_dykyv")
+
+[sub_resource type="Gradient" id="Gradient_k3ki5"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_2r0me"]
+gradient = SubResource("Gradient_k3ki5")
+
+[sub_resource type="Gradient" id="Gradient_5i6gn"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_ifamd"]
+gradient = SubResource("Gradient_5i6gn")
+
+[sub_resource type="Gradient" id="Gradient_c4uks"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_db0a7"]
+gradient = SubResource("Gradient_c4uks")
+
+[node name="InterfaceRaca" type="Control"]
+custom_minimum_size = Vector2(942, 897)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 942.0
+offset_bottom = 897.0
+script = ExtResource("1_wyewi")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="CaracteristicasDescritivasTitulo" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/CaracteristicasDescritivasTitulo"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="CaracteristicasDescritivasTitulo" type="Label" parent="VBoxContainer/CaracteristicasDescritivasTitulo"]
+layout_mode = 2
+text = "Caracteristicas Descritivas:"
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/CaracteristicasDescritivasTitulo"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="CaracteristicasDescritivas" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="Nome" type="LineEdit" parent="VBoxContainer/CaracteristicasDescritivas"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Nome"
+
+[node name="NomeConfirmar" type="TextureButton" parent="VBoxContainer/CaracteristicasDescritivas"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_a6j0g")
+texture_pressed = SubResource("GradientTexture1D_wma7a")
+texture_disabled = SubResource("GradientTexture1D_tal2d")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Genero" type="LineEdit" parent="VBoxContainer/CaracteristicasDescritivas"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Genero"
+
+[node name="GeneroConfirmar" type="TextureButton" parent="VBoxContainer/CaracteristicasDescritivas"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_a6j0g")
+texture_pressed = SubResource("GradientTexture1D_wma7a")
+texture_disabled = SubResource("GradientTexture1D_tal2d")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Idade" type="LineEdit" parent="VBoxContainer/CaracteristicasDescritivas"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Idade"
+
+[node name="IdadeConfirmar" type="TextureButton" parent="VBoxContainer/CaracteristicasDescritivas"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_a6j0g")
+texture_pressed = SubResource("GradientTexture1D_wma7a")
+texture_disabled = SubResource("GradientTexture1D_tal2d")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer4" type="MarginContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="CaracteristicasDescritivas2" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="Tamanho" type="OptionButton" parent="VBoxContainer/CaracteristicasDescritivas2"]
+layout_mode = 2
+size_flags_horizontal = 3
+item_count = 10
+selected = 0
+popup/item_0/text = "Tamanho"
+popup/item_0/id = 0
+popup/item_1/text = "Minusculo"
+popup/item_1/id = 1
+popup/item_1/disabled = true
+popup/item_2/text = "Pequeno"
+popup/item_2/id = 2
+popup/item_2/disabled = true
+popup/item_3/text = "Médio"
+popup/item_3/id = 3
+popup/item_3/disabled = true
+popup/item_4/text = "Grande"
+popup/item_4/id = 4
+popup/item_4/disabled = true
+popup/item_5/text = "Enorme"
+popup/item_5/id = 5
+popup/item_5/disabled = true
+popup/item_6/text = "Gigantesco"
+popup/item_6/id = 6
+popup/item_6/disabled = true
+popup/item_7/text = "Imenso"
+popup/item_7/id = 7
+popup/item_7/disabled = true
+popup/item_8/text = "Colossal"
+popup/item_8/id = 8
+popup/item_8/disabled = true
+popup/item_9/text = "Descomunal"
+popup/item_9/id = 9
+popup/item_9/disabled = true
+
+[node name="TamanhoConfirmar" type="TextureButton" parent="VBoxContainer/CaracteristicasDescritivas2"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_a6j0g")
+texture_pressed = SubResource("GradientTexture1D_wma7a")
+texture_disabled = SubResource("GradientTexture1D_tal2d")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Altura" type="LineEdit" parent="VBoxContainer/CaracteristicasDescritivas2"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Altura"
+
+[node name="AlturaConfirmar" type="TextureButton" parent="VBoxContainer/CaracteristicasDescritivas2"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_a6j0g")
+texture_pressed = SubResource("GradientTexture1D_wma7a")
+texture_disabled = SubResource("GradientTexture1D_tal2d")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Peso" type="LineEdit" parent="VBoxContainer/CaracteristicasDescritivas2"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Peso"
+
+[node name="PesoConfirmar" type="TextureButton" parent="VBoxContainer/CaracteristicasDescritivas2"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_a6j0g")
+texture_pressed = SubResource("GradientTexture1D_wma7a")
+texture_disabled = SubResource("GradientTexture1D_tal2d")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer5" type="MarginContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="CaracteristicasDescritivas3" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="Divindade" type="LineEdit" parent="VBoxContainer/CaracteristicasDescritivas3"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Divindade"
+
+[node name="DivindadeConfirmar" type="TextureButton" parent="VBoxContainer/CaracteristicasDescritivas3"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_a6j0g")
+texture_pressed = SubResource("GradientTexture1D_wma7a")
+texture_disabled = SubResource("GradientTexture1D_tal2d")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Jogador" type="LineEdit" parent="VBoxContainer/CaracteristicasDescritivas3"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Jogador"
+
+[node name="JogadorConfirmar" type="TextureButton" parent="VBoxContainer/CaracteristicasDescritivas3"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_a6j0g")
+texture_pressed = SubResource("GradientTexture1D_wma7a")
+texture_disabled = SubResource("GradientTexture1D_tal2d")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer6" type="MarginContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="RacasTitulo" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/RacasTitulo"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="RacasTitulo" type="Label" parent="VBoxContainer/RacasTitulo"]
+layout_mode = 2
+text = "Raças"
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/RacasTitulo"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="Racas" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/Racas"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Racas" type="OptionButton" parent="VBoxContainer/Racas"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+selected = 0
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/Racas"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MarginContainer7" type="MarginContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="Inforbox" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/Inforbox"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/Inforbox/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/Inforbox/ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 800)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Descritivo" type="RichTextLabel" parent="VBoxContainer/Inforbox/ScrollContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+
+[node name="Imagens" type="VBoxContainer" parent="VBoxContainer/Inforbox/ScrollContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ImagemEXPRaca" type="TextureRect" parent="VBoxContainer/Inforbox/ScrollContainer/VBoxContainer/HBoxContainer/Imagens"]
+custom_minimum_size = Vector2(0, 400)
+layout_mode = 2
+texture = SubResource("GradientTexture2D_t454u")
+
+[node name="Tabela1" type="TextureRect" parent="VBoxContainer/Inforbox/ScrollContainer/VBoxContainer/HBoxContainer/Imagens"]
+custom_minimum_size = Vector2(0, 400)
+layout_mode = 2
+texture = SubResource("GradientTexture2D_u4cg2")
+
+[node name="Tabela2" type="TextureRect" parent="VBoxContainer/Inforbox/ScrollContainer/VBoxContainer/HBoxContainer/Imagens"]
+custom_minimum_size = Vector2(0, 400)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_x0dxi")
+
+[node name="Tabela3" type="TextureRect" parent="VBoxContainer/Inforbox/ScrollContainer/VBoxContainer/HBoxContainer/Imagens"]
+custom_minimum_size = Vector2(0, 400)
+layout_mode = 2
+texture = SubResource("GradientTexture2D_hj4iy")
+
+[node name="TabelaRaca" type="TextureRect" parent="VBoxContainer/Inforbox/ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 600)
+layout_mode = 2
+texture = SubResource("GradientTexture1D_yiwty")
+expand_mode = 5
+
+[node name="MarginContainer8" type="MarginContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="Confirmar" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 65)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/Confirmar"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Confirmar" type="TextureButton" parent="VBoxContainer/Confirmar"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_2r0me")
+texture_pressed = SubResource("GradientTexture1D_ifamd")
+texture_disabled = SubResource("GradientTexture1D_db0a7")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/Confirmar"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[connection signal="pressed" from="VBoxContainer/CaracteristicasDescritivas/NomeConfirmar" to="." method="_on_nome_confirmar_pressed"]
+[connection signal="pressed" from="VBoxContainer/CaracteristicasDescritivas/GeneroConfirmar" to="." method="_on_genero_confirmar_pressed"]
+[connection signal="pressed" from="VBoxContainer/CaracteristicasDescritivas/IdadeConfirmar" to="." method="_on_idade_confirmar_pressed"]
+[connection signal="pressed" from="VBoxContainer/CaracteristicasDescritivas2/TamanhoConfirmar" to="." method="_on_textura_confirmar_pressed"]
+[connection signal="pressed" from="VBoxContainer/CaracteristicasDescritivas2/AlturaConfirmar" to="." method="_on_altura_confirmar_pressed"]
+[connection signal="pressed" from="VBoxContainer/CaracteristicasDescritivas2/PesoConfirmar" to="." method="_on_peso_confirmar_pressed"]
+[connection signal="pressed" from="VBoxContainer/CaracteristicasDescritivas3/DivindadeConfirmar" to="." method="_on_divindade_confirmar_pressed"]
+[connection signal="pressed" from="VBoxContainer/CaracteristicasDescritivas3/JogadorConfirmar" to="." method="_on_jogador_confirmar_pressed"]
+[connection signal="item_selected" from="VBoxContainer/Racas/Racas" to="." method="_on_racas_item_selected"]
+[connection signal="pressed" from="VBoxContainer/Confirmar/Confirmar" to="." method="_on_texture_button_pressed"]

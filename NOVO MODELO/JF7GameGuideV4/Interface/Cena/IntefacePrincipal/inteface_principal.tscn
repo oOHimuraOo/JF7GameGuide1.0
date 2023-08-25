@@ -1,0 +1,1805 @@
+[gd_scene load_steps=43 format=3 uid="uid://dojbx4no7gfb1"]
+
+[ext_resource type="Script" path="res://Interface/Cena/IntefacePrincipal/inteface_principalV2.gd" id="1_jtehb"]
+[ext_resource type="Texture2D" uid="uid://cvgfw1qe8i3i" path="res://Interface/Textura/Background/IntefacePrincipal/InterfaceBG.png" id="2_vy7bc"]
+[ext_resource type="Texture2D" uid="uid://qss7tprr48i7" path="res://Interface/Textura/Background/IntefacePrincipal/RetratoBG.png" id="3_e3imv"]
+[ext_resource type="Texture2D" uid="uid://cr20c6mbv77xb" path="res://Interface/Textura/Botao/InterfacePrincipal/BotaoReturnNotPressed.png" id="4_784u4"]
+[ext_resource type="Texture2D" uid="uid://s8xg1fn1m2i3" path="res://Interface/Textura/IMG/InterfacePrincipal/f1f77e7e98732ac4beff3e27a40d2db5.png" id="4_muctj"]
+[ext_resource type="Texture2D" uid="uid://bgwrcyx6m53iy" path="res://Interface/Textura/Botao/InterfacePrincipal/BotaoReturnPressed.png" id="5_j6onn"]
+[ext_resource type="Texture2D" uid="uid://d3e0weoe4tw35" path="res://Interface/Textura/Botao/InterfacePrincipal/BotaoReturnDisabled.png" id="6_efwy0"]
+[ext_resource type="Texture2D" uid="uid://cek47xkbyvyxq" path="res://Interface/Textura/Botao/InterfacePrincipal/Botao1a6NotPressed.png" id="7_x5cd6"]
+[ext_resource type="Texture2D" uid="uid://b1u0t4o0k3xc8" path="res://Interface/Textura/Botao/InterfacePrincipal/Botao1a6Pressed.png" id="8_csslf"]
+[ext_resource type="Texture2D" uid="uid://dqce6jo75y3sa" path="res://Interface/Textura/Botao/InterfacePrincipal/Botao1a6Disabled.png" id="9_64s1b"]
+[ext_resource type="Texture2D" uid="uid://calvg53llqsvp" path="res://Interface/Textura/Botao/InterfacePrincipal/BotaoAvancNotPressed.png" id="10_4disn"]
+[ext_resource type="Texture2D" uid="uid://ckx1e0buyhm0" path="res://Interface/Textura/Botao/InterfacePrincipal/BotaoAvancPressed.png" id="11_bu4fp"]
+[ext_resource type="FontFile" uid="uid://dy1lmlrx1exm0" path="res://Interface/Tipografia/Fontes/AGENCYB.TTF" id="11_mqmcm"]
+[ext_resource type="Texture2D" uid="uid://ihlfnmkhy40c" path="res://Interface/Textura/Botao/InterfacePrincipal/BotaoAvancDisabled.png" id="12_1byly"]
+[ext_resource type="Texture2D" uid="uid://dhdbc22sxh5mk" path="res://Interface/Textura/Botao/InterfacePrincipal/BotaoNegNotPressed.png" id="13_hvmd8"]
+[ext_resource type="Texture2D" uid="uid://dsty6yluujrma" path="res://Interface/Textura/Botao/InterfacePrincipal/BotaoNegPressed.png" id="14_q5ig3"]
+[ext_resource type="Texture2D" uid="uid://bgomy0vldke5h" path="res://Interface/Textura/Botao/InterfacePrincipal/BotaoNegDisabled.png" id="15_21dbx"]
+[ext_resource type="Texture2D" uid="uid://dgp5dyfvm10v1" path="res://Interface/Textura/Background/IntefacePrincipal/AtributoBG.png" id="16_kaybe"]
+[ext_resource type="Texture2D" uid="uid://c3x2w5e1sjmjx" path="res://Interface/Textura/Botao/InterfacePrincipal/BotaoPosNotPressed.png" id="17_2vgai"]
+[ext_resource type="Texture2D" uid="uid://b00pqt1msgpy1" path="res://Interface/Textura/Botao/InterfacePrincipal/BotaoPosPressed.png" id="18_53npu"]
+[ext_resource type="Texture2D" uid="uid://03mn45wekpt2" path="res://Interface/Textura/Botao/InterfacePrincipal/BotaoPosDisabled.png" id="19_qxx0u"]
+[ext_resource type="FontFile" uid="uid://dx141idb5wo17" path="res://Interface/Tipografia/Fontes/COPRGTB.TTF" id="19_w13jn"]
+[ext_resource type="Texture2D" uid="uid://okd2mjghi5qn" path="res://Interface/Textura/Botao/InterfacePrincipal/RolarAtrNotPressed.png" id="20_0gpe2"]
+[ext_resource type="Texture2D" uid="uid://diyccfxt3yknp" path="res://Interface/Textura/Botao/InterfacePrincipal/RolarAtrPressed.png" id="21_0lsgu"]
+[ext_resource type="Texture2D" uid="uid://d3f6s5hicu6ih" path="res://Interface/Textura/Botao/InterfacePrincipal/RolarAtrDisabled.png" id="22_uy5es"]
+[ext_resource type="Texture2D" uid="uid://bhooxfn0oxtn6" path="res://Interface/Textura/Background/IntefacePrincipal/PontosDisponiveisBG.png" id="23_vky54"]
+[ext_resource type="Texture2D" uid="uid://7bjjanysg7da" path="res://Interface/Textura/Background/IntefacePrincipal/InfoBoxBG.png" id="24_k5bmf"]
+[ext_resource type="Texture2D" uid="uid://drjp5whaivgjh" path="res://Interface/Textura/Botao/InterfacePrincipal/Botao7a11NotPressed.png" id="25_a6xox"]
+[ext_resource type="Texture2D" uid="uid://duhufcy3rxgdx" path="res://Interface/Textura/Botao/InterfacePrincipal/Botao7a11Pressed.png" id="26_18ku8"]
+[ext_resource type="Texture2D" uid="uid://dox822rw6c4jf" path="res://Interface/Textura/Botao/InterfacePrincipal/Botao7a11Disabled.png" id="27_7fo1o"]
+[ext_resource type="PackedScene" uid="uid://b48eit3al4bqe" path="res://Interface/Cena/IntefaceRaca/InterfaceRaca.tscn" id="28_c2j44"]
+[ext_resource type="PackedScene" uid="uid://bxbgtoeoocjoy" path="res://Interface/Cena/InterfacePersonalidade/InterfacePersonalidade.tscn" id="29_3duy5"]
+[ext_resource type="PackedScene" uid="uid://cte5oc6swik7w" path="res://Interface/Cena/QualidadeEDefeito/QualidadeEDefeito.tscn" id="30_rxng5"]
+[ext_resource type="PackedScene" uid="uid://eli0rsu8mt63" path="res://Interface/Cena/Antecedentes/Antecedentes.tscn" id="31_dmx12"]
+[ext_resource type="PackedScene" uid="uid://x53hc2ddvbe1" path="res://Interface/Cena/InterfaceEsferas/InterfaceEsferas.tscn" id="32_nccw8"]
+[ext_resource type="PackedScene" uid="uid://d2vliw0k2k0tv" path="res://Interface/Cena/IntefaceClasse/InterfaceClasse.tscn" id="33_hgrbr"]
+[ext_resource type="PackedScene" uid="uid://6bm2b1imfvhl" path="res://Interface/Cena/InterfacePericia/InterfacePericia.tscn" id="34_5wxib"]
+[ext_resource type="PackedScene" uid="uid://cr75j1lkoc7mi" path="res://Interface/Cena/InterfaceEquipamentos/InterfaceEquipamentos.tscn" id="35_mbkdv"]
+[ext_resource type="PackedScene" uid="uid://blaxttdnciphp" path="res://Interface/Cena/InterfaceTalento/InterfaceTalento.tscn" id="36_jmnqw"]
+[ext_resource type="PackedScene" uid="uid://df08yyv1cqhp2" path="res://Interface/Cena/InterfaceMagiaVulgar/InterfaceMagiaVulgar.tscn" id="37_exvf4"]
+[ext_resource type="PackedScene" uid="uid://cpkxpsb1oqno5" path="res://Interface/Cena/InterfaceQuintessenciaParadoxo/InterfaceQuintessenciaParadoxo.tscn" id="38_mdit8"]
+[ext_resource type="PackedScene" uid="uid://cl03wf4qpby5a" path="res://Interface/Cena/InterfaceMagiaCoincidente/InterfaceMagiaCoincidente.tscn" id="39_0ojak"]
+
+[node name="IntefacePrincipal" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jtehb")
+
+[node name="InterfaceBacground" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_vy7bc")
+patch_margin_left = 30
+patch_margin_top = 30
+patch_margin_right = 30
+patch_margin_bottom = 30
+
+[node name="InterfaceContainer" type="HBoxContainer" parent="InterfaceBacground"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -937.0
+offset_top = -510.5
+offset_right = 937.0
+offset_bottom = 510.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PersonagemMenu" type="VBoxContainer" parent="InterfaceBacground/InterfaceContainer"]
+custom_minimum_size = Vector2(504, 1020)
+layout_mode = 2
+
+[node name="PersonagemBacground" type="NinePatchRect" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu"]
+custom_minimum_size = Vector2(504, 708)
+layout_mode = 2
+texture = ExtResource("3_e3imv")
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="PersonagemImagem" type="TextureRect" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/PersonagemBacground"]
+custom_minimum_size = Vector2(464, 678)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -232.0
+offset_right = 232.0
+grow_horizontal = 2
+grow_vertical = 2
+tooltip_text = "Clique duas vezes para importar uma imagem para seu personagem"
+texture = ExtResource("4_muctj")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="MenuContainer" type="VBoxContainer" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu"]
+custom_minimum_size = Vector2(504, 309)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer"]
+custom_minimum_size = Vector2(504, 309)
+layout_mode = 2
+
+[node name="MargemEsquerda" type="MarginContainer" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer"]
+custom_minimum_size = Vector2(10, 309)
+layout_mode = 2
+
+[node name="BotaoRetornar" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer"]
+custom_minimum_size = Vector2(50, 309)
+layout_mode = 2
+tooltip_text = "Revela a primeira pagina de botões"
+disabled = true
+texture_normal = ExtResource("4_784u4")
+texture_pressed = ExtResource("5_j6onn")
+texture_disabled = ExtResource("6_efwy0")
+
+[node name="MenuPG1" type="VBoxContainer" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer"]
+custom_minimum_size = Vector2(368, 309)
+layout_mode = 2
+
+[node name="RacaClasse" type="HBoxContainer" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG1"]
+custom_minimum_size = Vector2(368, 100)
+layout_mode = 2
+
+[node name="Raca" type="HBoxContainer" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG1/RacaClasse"]
+custom_minimum_size = Vector2(180, 100)
+layout_mode = 2
+
+[node name="BotaoRaca" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG1/RacaClasse/Raca"]
+custom_minimum_size = Vector2(180, 100)
+layout_mode = 2
+tooltip_text = "Ao clicar nesse botão, você poderá ver todas as informações relacionadas as raças e poderá escolher qual será a sua raça.
+
+ATENÇÃO: esse botão só é liberado ao clicar em novo personagem."
+texture_normal = ExtResource("7_x5cd6")
+texture_pressed = ExtResource("8_csslf")
+texture_disabled = ExtResource("9_64s1b")
+
+[node name="EtiquetaRaca" type="Label" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG1/RacaClasse/Raca/BotaoRaca"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("11_mqmcm")
+theme_override_font_sizes/font_size = 30
+text = "Raça"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG1/RacaClasse"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="Classe" type="HBoxContainer" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG1/RacaClasse"]
+custom_minimum_size = Vector2(180, 100)
+layout_mode = 2
+
+[node name="BotaoClasse" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG1/RacaClasse/Classe"]
+custom_minimum_size = Vector2(180, 100)
+layout_mode = 2
+tooltip_text = "Ao clicar nesse botão, você poderá ver todas as informações relacionadas as classes e poderá escolher qual será a sua classe.
+
+ATENÇÃO: esse botão só é liberado quando você escolher sua esfera e se você sera adormecido ou desperto."
+texture_normal = ExtResource("7_x5cd6")
+texture_pressed = ExtResource("8_csslf")
+texture_disabled = ExtResource("9_64s1b")
+
+[node name="EtiquetaClasse" type="Label" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG1/RacaClasse/Classe/BotaoClasse"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("11_mqmcm")
+theme_override_font_sizes/font_size = 30
+text = "Classe"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AntecedentesPersonalidade" type="HBoxContainer" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG1"]
+custom_minimum_size = Vector2(368, 100)
+layout_mode = 2
+
+[node name="Antecedentes" type="HBoxContainer" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG1/AntecedentesPersonalidade"]
+custom_minimum_size = Vector2(180, 100)
+layout_mode = 2
+
+[node name="BotaoAntecedentes" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG1/AntecedentesPersonalidade/Antecedentes"]
+custom_minimum_size = Vector2(180, 100)
+layout_mode = 2
+tooltip_text = "Ao clicar nesse botão, você poderá ver todas as informações relacionadas aos antecedentes e poderá escolher qual será a seu antecedente.
+
+ATENÇÃO: esse botão só é liberado quando você escolher suas qualidades e defeitos"
+texture_normal = ExtResource("7_x5cd6")
+texture_pressed = ExtResource("8_csslf")
+texture_disabled = ExtResource("9_64s1b")
+
+[node name="EtiquetaAntecedentes" type="Label" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG1/AntecedentesPersonalidade/Antecedentes/BotaoAntecedentes"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("11_mqmcm")
+theme_override_font_sizes/font_size = 30
+text = "Antecedentes"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG1/AntecedentesPersonalidade"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="Personalidade" type="HBoxContainer" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG1/AntecedentesPersonalidade"]
+custom_minimum_size = Vector2(180, 100)
+layout_mode = 2
+
+[node name="BotaoPersonalidade" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG1/AntecedentesPersonalidade/Personalidade"]
+custom_minimum_size = Vector2(180, 100)
+layout_mode = 2
+tooltip_text = "Ao clicar nesse botão, você poderá ver todas as informações relacionadas aos arquetipos de personalidade e poderá escolher qual será a seu arquetipo de personalidade.
+
+ATENÇÃO: esse botão só é liberado quando você escolher sua raça"
+texture_normal = ExtResource("7_x5cd6")
+texture_pressed = ExtResource("8_csslf")
+texture_disabled = ExtResource("9_64s1b")
+
+[node name="EtiquetaPersonalidade" type="Label" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG1/AntecedentesPersonalidade/Personalidade/BotaoPersonalidade"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("11_mqmcm")
+theme_override_font_sizes/font_size = 20
+text = "Arquétipos
+de
+Personalidade"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="QuaDefPericia" type="HBoxContainer" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG1"]
+custom_minimum_size = Vector2(368, 100)
+layout_mode = 2
+
+[node name="QuaDef" type="HBoxContainer" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG1/QuaDefPericia"]
+custom_minimum_size = Vector2(180, 100)
+layout_mode = 2
+
+[node name="BotaoQuaDef" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG1/QuaDefPericia/QuaDef"]
+custom_minimum_size = Vector2(180, 100)
+layout_mode = 2
+tooltip_text = "Ao clicar nesse botão, você poderá ver todas as informações relacionadas as qualidades e defeitos e poderá escolher qual será a sua qualidade e defeito.
+
+ATENÇÃO: esse botão só é liberado quando você escolher seus arquetipos de personalidade"
+texture_normal = ExtResource("7_x5cd6")
+texture_pressed = ExtResource("8_csslf")
+texture_disabled = ExtResource("9_64s1b")
+
+[node name="EtiquetaQuaDef" type="Label" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG1/QuaDefPericia/QuaDef/BotaoQuaDef"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("11_mqmcm")
+theme_override_font_sizes/font_size = 20
+text = "Qualidades
+e
+Defeitos"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG1/QuaDefPericia"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="Pericia" type="HBoxContainer" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG1/QuaDefPericia"]
+custom_minimum_size = Vector2(180, 100)
+layout_mode = 2
+
+[node name="BotaoPericia" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG1/QuaDefPericia/Pericia"]
+custom_minimum_size = Vector2(180, 100)
+layout_mode = 2
+tooltip_text = "Ao clicar nesse botão, você poderá ver todas as informações relacionadas as pericias e poderá escolher quais serão as suas pericias.
+
+ATENÇÃO: esse botão só é liberado quando você escolher sua classe."
+texture_normal = ExtResource("7_x5cd6")
+texture_pressed = ExtResource("8_csslf")
+texture_disabled = ExtResource("9_64s1b")
+
+[node name="EtiquetaPericia" type="Label" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG1/QuaDefPericia/Pericia/BotaoPericia"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("11_mqmcm")
+theme_override_font_sizes/font_size = 30
+text = "Perícias"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MenuPG2" type="VBoxContainer" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(368, 309)
+layout_mode = 2
+
+[node name="TalentoMagiCoin" type="HBoxContainer" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG2"]
+custom_minimum_size = Vector2(368, 100)
+layout_mode = 2
+
+[node name="Talento" type="HBoxContainer" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG2/TalentoMagiCoin"]
+custom_minimum_size = Vector2(180, 100)
+layout_mode = 2
+
+[node name="BotaoTalento" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG2/TalentoMagiCoin/Talento"]
+custom_minimum_size = Vector2(180, 100)
+layout_mode = 2
+tooltip_text = "Ao clicar nesse botão, você poderá ver todas as informações relacionadas aos talentos e poderá escolher qual será a sua arvore de talentos.
+
+ATENÇÃO: esse botão só é liberado quando você estiver escolhido todos os seus equipamentos"
+texture_normal = ExtResource("7_x5cd6")
+texture_pressed = ExtResource("8_csslf")
+texture_disabled = ExtResource("9_64s1b")
+
+[node name="EtiquetaTalento" type="Label" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG2/TalentoMagiCoin/Talento/BotaoTalento"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("11_mqmcm")
+theme_override_font_sizes/font_size = 30
+text = "Talento"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG2/TalentoMagiCoin"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="MagiCoin" type="HBoxContainer" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG2/TalentoMagiCoin"]
+custom_minimum_size = Vector2(180, 100)
+layout_mode = 2
+
+[node name="BotaoMagiCoin" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG2/TalentoMagiCoin/MagiCoin"]
+custom_minimum_size = Vector2(180, 100)
+layout_mode = 2
+tooltip_text = "Ao clicar nesse botão, você poderá ver todas as informações relacionadas as magias coincidentes e poderá escolher quais magias coincidentes você terá caso você possua alguma.
+
+ATENÇÃO: esse botão só é liberado quando você tiver escolhido seu talento"
+texture_normal = ExtResource("7_x5cd6")
+texture_pressed = ExtResource("8_csslf")
+texture_disabled = ExtResource("9_64s1b")
+
+[node name="EtiquetaMagiCoin" type="Label" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG2/TalentoMagiCoin/MagiCoin/BotaoMagiCoin"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("11_mqmcm")
+theme_override_font_sizes/font_size = 30
+text = "Magia 
+Coincidente"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MagiVulEquip" type="HBoxContainer" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG2"]
+custom_minimum_size = Vector2(368, 100)
+layout_mode = 2
+
+[node name="MagiVul" type="HBoxContainer" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG2/MagiVulEquip"]
+custom_minimum_size = Vector2(180, 100)
+layout_mode = 2
+
+[node name="BotaoMagiVul" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG2/MagiVulEquip/MagiVul"]
+custom_minimum_size = Vector2(180, 100)
+layout_mode = 2
+tooltip_text = "Ao clicar nesse botão, você poderá ver todas as informações relacionadas as magias vulgares e poderá escolher qual será a sua magia vulgar. caso você possua alguma
+
+ATENÇÃO: esse botão só é liberado quando você tiver escolhido seu talento"
+texture_normal = ExtResource("7_x5cd6")
+texture_pressed = ExtResource("8_csslf")
+texture_disabled = ExtResource("9_64s1b")
+
+[node name="EtiquetaMagiVul" type="Label" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG2/MagiVulEquip/MagiVul/BotaoMagiVul"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("11_mqmcm")
+theme_override_font_sizes/font_size = 30
+text = "Magia 
+Vulgar"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG2/MagiVulEquip"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="Equip" type="HBoxContainer" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG2/MagiVulEquip"]
+custom_minimum_size = Vector2(180, 100)
+layout_mode = 2
+
+[node name="BotaoEquip" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG2/MagiVulEquip/Equip"]
+custom_minimum_size = Vector2(180, 100)
+layout_mode = 2
+tooltip_text = "Ao clicar nesse botão, você poderá ver todas as informações relacionadas aos equipamentos e poderá escolher qual são os seus equipamentos.
+
+ATENÇÃO: esse botão só é liberado quando você tiver escolhido suas pericias"
+texture_normal = ExtResource("7_x5cd6")
+texture_pressed = ExtResource("8_csslf")
+texture_disabled = ExtResource("9_64s1b")
+
+[node name="EtiquetaEquip" type="Label" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG2/MagiVulEquip/Equip/BotaoEquip"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("11_mqmcm")
+theme_override_font_sizes/font_size = 30
+text = "Equipamentos"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="EsferasQuiPara" type="HBoxContainer" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG2"]
+custom_minimum_size = Vector2(368, 100)
+layout_mode = 2
+
+[node name="Esferas" type="HBoxContainer" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG2/EsferasQuiPara"]
+custom_minimum_size = Vector2(180, 100)
+layout_mode = 2
+
+[node name="BotaoEsferas" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG2/EsferasQuiPara/Esferas"]
+custom_minimum_size = Vector2(180, 100)
+layout_mode = 2
+tooltip_text = "Ao clicar nesse botão, você poderá ver todas as informações relacionadas as esferas e poderá escolher qual será a sua esfera de afinidade e se você será um desperto ou um adormecido.
+
+ATENÇÃO: esse botão só é liberado quando você tiver escolhido seu antecedente"
+texture_normal = ExtResource("7_x5cd6")
+texture_pressed = ExtResource("8_csslf")
+texture_disabled = ExtResource("9_64s1b")
+
+[node name="EtiquetaEsferas" type="Label" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG2/EsferasQuiPara/Esferas/BotaoEsferas"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("11_mqmcm")
+theme_override_font_sizes/font_size = 30
+text = "Esferas"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG2/EsferasQuiPara"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="QuiPara" type="HBoxContainer" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG2/EsferasQuiPara"]
+custom_minimum_size = Vector2(180, 100)
+layout_mode = 2
+
+[node name="BotaoQuiPara" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG2/EsferasQuiPara/QuiPara"]
+custom_minimum_size = Vector2(180, 100)
+layout_mode = 2
+tooltip_text = "Ao clicar nesse botão, você poderá ver todas as informações relacionadas a quintessencia e paradoxo.
+
+ATENÇÃO: esse botão só é liberado quando você tiver escolhido seu talento"
+texture_normal = ExtResource("7_x5cd6")
+texture_pressed = ExtResource("8_csslf")
+texture_disabled = ExtResource("9_64s1b")
+
+[node name="EtiquetaQuiPara" type="Label" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG2/EsferasQuiPara/QuiPara/BotaoQuiPara"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("11_mqmcm")
+theme_override_font_sizes/font_size = 30
+text = "Quintessência
+Paradoxo"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotaoAvancar" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer"]
+custom_minimum_size = Vector2(50, 309)
+layout_mode = 2
+tooltip_text = "Revela a segunda pagina de botões."
+texture_normal = ExtResource("10_4disn")
+texture_pressed = ExtResource("11_bu4fp")
+texture_disabled = ExtResource("12_1byly")
+
+[node name="MargemDireita" type="MarginContainer" parent="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer"]
+custom_minimum_size = Vector2(10, 309)
+layout_mode = 2
+
+[node name="AtributoInfoboxButao" type="VBoxContainer" parent="InterfaceBacground/InterfaceContainer"]
+custom_minimum_size = Vector2(1326, 1020)
+layout_mode = 2
+
+[node name="AtributoInfobox" type="HBoxContainer" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao"]
+custom_minimum_size = Vector2(1366, 917)
+layout_mode = 2
+
+[node name="Atributo" type="VBoxContainer" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox"]
+custom_minimum_size = Vector2(400, 917)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo"]
+custom_minimum_size = Vector2(400, 70)
+layout_mode = 2
+
+[node name="For" type="Control" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo"]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+
+[node name="BotaoDiminuirAtr" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/For"]
+custom_minimum_size = Vector2(25, 50)
+layout_mode = 0
+offset_right = 25.0
+offset_bottom = 50.0
+tooltip_text = "Você poderá utilizar esse botão para reduzir seu atributo enquanto você tiver mais do que quatro pontos no valor do atributo. 
+
+ATENÇÃO: você só será recompensado por reduzir seu atributo enquanto seu valor temporário for maior do que -2."
+disabled = true
+texture_normal = ExtResource("13_hvmd8")
+texture_pressed = ExtResource("14_q5ig3")
+texture_disabled = ExtResource("15_21dbx")
+
+[node name="AtributoBackground" type="TextureRect" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/For"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 0
+offset_left = 25.0
+offset_right = 325.0
+offset_bottom = 50.0
+texture = ExtResource("16_kaybe")
+
+[node name="AtributoContainer" type="HBoxContainer" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/For/AtributoBackground"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Atributo" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/For/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(100, 45)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+text = "Força"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Mudanca" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/For/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+tooltip_text = "O valor temporario representa quantos pontos de atributo você já acrescentou ou retirou de seu atributo.
+Lembre-se que reduzir esse valor até menos do que -2 não trará beneficios para seu persoangem."
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Valor" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/For/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+tooltip_text = "O valor total do seu atributo atualmente. 
+O Maximo que você pode ter de atributo atravez dessa distribuição de pontos varia entre 4 e 20."
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BonificadorAtributo" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/For/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+tooltip_text = "O valor de bonus varia de acordo com cada raça.
+Esse valor pode variar entre -3 e +3.
+
+ATENÇÃO: tome cuidado ao distribuir seus pontos. Pois essa bonificação poderá afetar o seu valor para menos do que 4.
+"
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ModificadorAtributo" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/For/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+tooltip_text = "O modificador irá indicar quanto que você irá somar a sua rolagem de dado 
+toda vez que você for realizar alguma rolagem relacionada com esse atributo.
+
+Ele é calculado atraves da seguinte formula:
+((Valor do Atributo - 10)/2) -> caso o valor não seja inteiro ele é arredondado para baixo."
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotaoAumentarAtributo" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/For"]
+custom_minimum_size = Vector2(25, 50)
+layout_mode = 0
+offset_left = 325.0
+offset_right = 350.0
+offset_bottom = 50.0
+tooltip_text = "Você poderá utilizar esse botão para aumentar seu atributo enquanto você tiver menos do que 20 pontos no valor do atributo.
+
+ATENÇÃO: cada ponto comprado irá reduzir o seu ponto disponivel em 1."
+disabled = true
+texture_normal = ExtResource("17_2vgai")
+texture_pressed = ExtResource("18_53npu")
+texture_disabled = ExtResource("19_qxx0u")
+
+[node name="BotaoRolarAtributo" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/For"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 0
+offset_left = 350.0
+offset_right = 400.0
+offset_bottom = 50.0
+tooltip_text = "Você poderá utilizar esse botão para rolar o valor inicial do seu atributo. 
+Esse valor é igual a 1d6+6. Você poderá rolar cada atributo individualmente até 3 vezes. 
+Você só poderá realizar essa rolagem se nenhuma modificação nesse atributo tiver sido realizada."
+texture_normal = ExtResource("20_0gpe2")
+texture_pressed = ExtResource("21_0lsgu")
+texture_disabled = ExtResource("22_uy5es")
+
+[node name="MarginContainer2" type="MarginContainer" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo"]
+custom_minimum_size = Vector2(400, 30)
+layout_mode = 2
+
+[node name="Des" type="Control" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo"]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+
+[node name="BotaoDiminuirAtr" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Des"]
+custom_minimum_size = Vector2(25, 50)
+layout_mode = 0
+offset_right = 25.0
+offset_bottom = 50.0
+tooltip_text = "Você poderá utilizar esse botão para reduzir seu atributo enquanto você tiver mais do que quatro pontos no valor do atributo. 
+
+ATENÇÃO: você só será recompensado por reduzir seu atributo enquanto seu valor temporário for maior do que -2."
+disabled = true
+texture_normal = ExtResource("13_hvmd8")
+texture_pressed = ExtResource("14_q5ig3")
+texture_disabled = ExtResource("15_21dbx")
+
+[node name="AtributoBackground" type="TextureRect" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Des"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 0
+offset_left = 25.0
+offset_right = 325.0
+offset_bottom = 50.0
+texture = ExtResource("16_kaybe")
+
+[node name="AtributoContainer" type="HBoxContainer" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Des/AtributoBackground"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Atributo" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Des/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(100, 45)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+text = "Destreza"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Mudanca" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Des/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+tooltip_text = "O valor temporario representa quantos pontos de atributo você já acrescentou ou retirou de seu atributo.
+Lembre-se que reduzir esse valor até menos do que -2 não trará beneficios para seu persoangem."
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Valor" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Des/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+tooltip_text = "O valor total do seu atributo atualmente. 
+O Maximo que você pode ter de atributo atravez dessa distribuição de pontos varia entre 4 e 20."
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BonificadorAtributo" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Des/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+tooltip_text = "O valor de bonus varia de acordo com cada raça.
+Esse valor pode variar entre -3 e +3.
+
+ATENÇÃO: tome cuidado ao distribuir seus pontos. Pois essa bonificação poderá afetar o seu valor para menos do que 4.
+"
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ModificadorAtributo" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Des/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+tooltip_text = "O modificador irá indicar quanto que você irá somar a sua rolagem de dado 
+toda vez que você for realizar alguma rolagem relacionada com esse atributo.
+
+Ele é calculado atraves da seguinte formula:
+((Valor do Atributo - 10)/2) -> caso o valor não seja inteiro ele é arredondado para baixo."
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotaoAumentarAtributo" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Des"]
+custom_minimum_size = Vector2(25, 50)
+layout_mode = 0
+offset_left = 325.0
+offset_right = 350.0
+offset_bottom = 50.0
+tooltip_text = "Você poderá utilizar esse botão para aumentar seu atributo enquanto você tiver menos do que 20 pontos no valor do atributo.
+
+ATENÇÃO: cada ponto comprado irá reduzir o seu ponto disponivel em 1."
+disabled = true
+texture_normal = ExtResource("17_2vgai")
+texture_pressed = ExtResource("18_53npu")
+texture_disabled = ExtResource("19_qxx0u")
+
+[node name="BotaoRolarAtributo" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Des"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 0
+offset_left = 350.0
+offset_right = 400.0
+offset_bottom = 50.0
+tooltip_text = "Você poderá utilizar esse botão para rolar o valor inicial do seu atributo. 
+Esse valor é igual a 1d6+6. Você poderá rolar cada atributo individualmente até 3 vezes. 
+Você só poderá realizar essa rolagem se nenhuma modificação nesse atributo tiver sido realizada."
+texture_normal = ExtResource("20_0gpe2")
+texture_pressed = ExtResource("21_0lsgu")
+texture_disabled = ExtResource("22_uy5es")
+
+[node name="MarginContainer3" type="MarginContainer" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo"]
+custom_minimum_size = Vector2(400, 30)
+layout_mode = 2
+
+[node name="Con" type="Control" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo"]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+
+[node name="BotaoDiminuirAtr" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Con"]
+custom_minimum_size = Vector2(25, 50)
+layout_mode = 0
+offset_right = 25.0
+offset_bottom = 50.0
+tooltip_text = "Você poderá utilizar esse botão para reduzir seu atributo enquanto você tiver mais do que quatro pontos no valor do atributo. 
+
+ATENÇÃO: você só será recompensado por reduzir seu atributo enquanto seu valor temporário for maior do que -2."
+disabled = true
+texture_normal = ExtResource("13_hvmd8")
+texture_pressed = ExtResource("14_q5ig3")
+texture_disabled = ExtResource("15_21dbx")
+
+[node name="AtributoBackground" type="TextureRect" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Con"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 0
+offset_left = 25.0
+offset_right = 325.0
+offset_bottom = 50.0
+texture = ExtResource("16_kaybe")
+
+[node name="AtributoContainer" type="HBoxContainer" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Con/AtributoBackground"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Atributo" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Con/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(100, 45)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+text = "Constituição"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Mudanca" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Con/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+tooltip_text = "O valor temporario representa quantos pontos de atributo você já acrescentou ou retirou de seu atributo.
+Lembre-se que reduzir esse valor até menos do que -2 não trará beneficios para seu persoangem."
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Valor" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Con/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+tooltip_text = "O valor total do seu atributo atualmente. 
+O Maximo que você pode ter de atributo atravez dessa distribuição de pontos varia entre 4 e 20."
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BonificadorAtributo" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Con/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+tooltip_text = "O valor de bonus varia de acordo com cada raça.
+Esse valor pode variar entre -3 e +3.
+
+ATENÇÃO: tome cuidado ao distribuir seus pontos. Pois essa bonificação poderá afetar o seu valor para menos do que 4.
+"
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ModificadorAtributo" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Con/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+tooltip_text = "O modificador irá indicar quanto que você irá somar a sua rolagem de dado 
+toda vez que você for realizar alguma rolagem relacionada com esse atributo.
+
+Ele é calculado atraves da seguinte formula:
+((Valor do Atributo - 10)/2) -> caso o valor não seja inteiro ele é arredondado para baixo."
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotaoAumentarAtributo" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Con"]
+custom_minimum_size = Vector2(25, 50)
+layout_mode = 0
+offset_left = 325.0
+offset_right = 350.0
+offset_bottom = 50.0
+tooltip_text = "Você poderá utilizar esse botão para aumentar seu atributo enquanto você tiver menos do que 20 pontos no valor do atributo.
+
+ATENÇÃO: cada ponto comprado irá reduzir o seu ponto disponivel em 1."
+disabled = true
+texture_normal = ExtResource("17_2vgai")
+texture_pressed = ExtResource("18_53npu")
+texture_disabled = ExtResource("19_qxx0u")
+
+[node name="BotaoRolarAtributo" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Con"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 0
+offset_left = 350.0
+offset_right = 400.0
+offset_bottom = 50.0
+tooltip_text = "Você poderá utilizar esse botão para rolar o valor inicial do seu atributo. 
+Esse valor é igual a 1d6+6. Você poderá rolar cada atributo individualmente até 3 vezes. 
+Você só poderá realizar essa rolagem se nenhuma modificação nesse atributo tiver sido realizada."
+texture_normal = ExtResource("20_0gpe2")
+texture_pressed = ExtResource("21_0lsgu")
+texture_disabled = ExtResource("22_uy5es")
+
+[node name="MarginContainer4" type="MarginContainer" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo"]
+custom_minimum_size = Vector2(400, 30)
+layout_mode = 2
+
+[node name="Hon" type="Control" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo"]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+
+[node name="BotaoDiminuirAtr" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Hon"]
+custom_minimum_size = Vector2(25, 50)
+layout_mode = 0
+offset_right = 25.0
+offset_bottom = 50.0
+tooltip_text = "Você poderá utilizar esse botão para reduzir seu atributo enquanto você tiver mais do que quatro pontos no valor do atributo. 
+
+ATENÇÃO: você só será recompensado por reduzir seu atributo enquanto seu valor temporário for maior do que -2."
+disabled = true
+texture_normal = ExtResource("13_hvmd8")
+texture_pressed = ExtResource("14_q5ig3")
+texture_disabled = ExtResource("15_21dbx")
+
+[node name="AtributoBackground" type="TextureRect" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Hon"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 0
+offset_left = 25.0
+offset_right = 325.0
+offset_bottom = 50.0
+texture = ExtResource("16_kaybe")
+
+[node name="AtributoContainer" type="HBoxContainer" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Hon/AtributoBackground"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 0
+offset_right = 300.0
+offset_bottom = 50.0
+
+[node name="Atributo" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Hon/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(100, 45)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+text = "Honra"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Mudanca" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Hon/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+tooltip_text = "O valor temporario representa quantos pontos de atributo você já acrescentou ou retirou de seu atributo.
+Lembre-se que reduzir esse valor até menos do que -2 não trará beneficios para seu persoangem."
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Valor" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Hon/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+tooltip_text = "O valor total do seu atributo atualmente. 
+O Maximo que você pode ter de atributo atravez dessa distribuição de pontos varia entre 4 e 20."
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BonificadorAtributo" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Hon/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+tooltip_text = "O valor de bonus varia de acordo com cada raça.
+Esse valor pode variar entre -3 e +3.
+
+ATENÇÃO: tome cuidado ao distribuir seus pontos. Pois essa bonificação poderá afetar o seu valor para menos do que 4.
+"
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ModificadorAtributo" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Hon/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+tooltip_text = "O modificador irá indicar quanto que você irá somar a sua rolagem de dado 
+toda vez que você for realizar alguma rolagem relacionada com esse atributo.
+
+Ele é calculado atraves da seguinte formula:
+((Valor do Atributo - 10)/2) -> caso o valor não seja inteiro ele é arredondado para baixo."
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotaoAumentarAtributo" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Hon"]
+custom_minimum_size = Vector2(25, 50)
+layout_mode = 0
+offset_left = 325.0
+offset_right = 350.0
+offset_bottom = 50.0
+tooltip_text = "Você poderá utilizar esse botão para aumentar seu atributo enquanto você tiver menos do que 20 pontos no valor do atributo.
+
+ATENÇÃO: cada ponto comprado irá reduzir o seu ponto disponivel em 1."
+disabled = true
+texture_normal = ExtResource("17_2vgai")
+texture_pressed = ExtResource("18_53npu")
+texture_disabled = ExtResource("19_qxx0u")
+
+[node name="BotaoRolarAtributo" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Hon"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 0
+offset_left = 350.0
+offset_right = 400.0
+offset_bottom = 50.0
+tooltip_text = "Você poderá utilizar esse botão para rolar o valor inicial do seu atributo. 
+Esse valor é igual a 1d6+6. Você poderá rolar cada atributo individualmente até 3 vezes. 
+Você só poderá realizar essa rolagem se nenhuma modificação nesse atributo tiver sido realizada."
+texture_normal = ExtResource("20_0gpe2")
+texture_pressed = ExtResource("21_0lsgu")
+texture_disabled = ExtResource("22_uy5es")
+
+[node name="MarginContainer5" type="MarginContainer" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo"]
+custom_minimum_size = Vector2(400, 30)
+layout_mode = 2
+
+[node name="San" type="Control" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo"]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+
+[node name="BotaoDiminuirAtr" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/San"]
+custom_minimum_size = Vector2(25, 50)
+layout_mode = 0
+offset_right = 25.0
+offset_bottom = 50.0
+tooltip_text = "Você poderá utilizar esse botão para reduzir seu atributo enquanto você tiver mais do que quatro pontos no valor do atributo. 
+
+ATENÇÃO: você só será recompensado por reduzir seu atributo enquanto seu valor temporário for maior do que -2."
+disabled = true
+texture_normal = ExtResource("13_hvmd8")
+texture_pressed = ExtResource("14_q5ig3")
+texture_disabled = ExtResource("15_21dbx")
+
+[node name="AtributoBackground" type="TextureRect" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/San"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 0
+offset_left = 25.0
+offset_right = 325.0
+offset_bottom = 50.0
+texture = ExtResource("16_kaybe")
+
+[node name="AtributoContainer" type="HBoxContainer" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/San/AtributoBackground"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Atributo" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/San/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(100, 45)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+text = "Sanidade"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Mudanca" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/San/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+tooltip_text = "O valor temporario representa quantos pontos de atributo você já acrescentou ou retirou de seu atributo.
+Lembre-se que reduzir esse valor até menos do que -2 não trará beneficios para seu persoangem."
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Valor" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/San/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+tooltip_text = "O valor total do seu atributo atualmente. 
+O Maximo que você pode ter de atributo atravez dessa distribuição de pontos varia entre 4 e 20."
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BonificadorAtributo" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/San/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+tooltip_text = "O valor de bonus varia de acordo com cada raça.
+Esse valor pode variar entre -3 e +3.
+
+ATENÇÃO: tome cuidado ao distribuir seus pontos. Pois essa bonificação poderá afetar o seu valor para menos do que 4.
+"
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ModificadorAtributo" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/San/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+tooltip_text = "O modificador irá indicar quanto que você irá somar a sua rolagem de dado 
+toda vez que você for realizar alguma rolagem relacionada com esse atributo.
+
+Ele é calculado atraves da seguinte formula:
+((Valor do Atributo - 10)/2) -> caso o valor não seja inteiro ele é arredondado para baixo."
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotaoAumentarAtributo" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/San"]
+custom_minimum_size = Vector2(25, 50)
+layout_mode = 0
+offset_left = 325.0
+offset_right = 350.0
+offset_bottom = 50.0
+tooltip_text = "Você poderá utilizar esse botão para aumentar seu atributo enquanto você tiver menos do que 20 pontos no valor do atributo.
+
+ATENÇÃO: cada ponto comprado irá reduzir o seu ponto disponivel em 1."
+disabled = true
+texture_normal = ExtResource("17_2vgai")
+texture_pressed = ExtResource("18_53npu")
+texture_disabled = ExtResource("19_qxx0u")
+
+[node name="BotaoRolarAtributo" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/San"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 0
+offset_left = 350.0
+offset_right = 400.0
+offset_bottom = 50.0
+tooltip_text = "Você poderá utilizar esse botão para rolar o valor inicial do seu atributo. 
+Esse valor é igual a 1d6+6. Você poderá rolar cada atributo individualmente até 3 vezes. 
+Você só poderá realizar essa rolagem se nenhuma modificação nesse atributo tiver sido realizada."
+texture_normal = ExtResource("20_0gpe2")
+texture_pressed = ExtResource("21_0lsgu")
+texture_disabled = ExtResource("22_uy5es")
+
+[node name="MarginContainer6" type="MarginContainer" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo"]
+custom_minimum_size = Vector2(400, 30)
+layout_mode = 2
+
+[node name="Sab" type="Control" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo"]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+
+[node name="BotaoDiminuirAtr" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Sab"]
+custom_minimum_size = Vector2(25, 50)
+layout_mode = 0
+offset_right = 25.0
+offset_bottom = 50.0
+tooltip_text = "Você poderá utilizar esse botão para reduzir seu atributo enquanto você tiver mais do que quatro pontos no valor do atributo. 
+
+ATENÇÃO: você só será recompensado por reduzir seu atributo enquanto seu valor temporário for maior do que -2."
+disabled = true
+texture_normal = ExtResource("13_hvmd8")
+texture_pressed = ExtResource("14_q5ig3")
+texture_disabled = ExtResource("15_21dbx")
+
+[node name="AtributoBackground" type="TextureRect" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Sab"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 0
+offset_left = 25.0
+offset_right = 325.0
+offset_bottom = 50.0
+texture = ExtResource("16_kaybe")
+
+[node name="AtributoContainer" type="HBoxContainer" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Sab/AtributoBackground"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Atributo" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Sab/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(100, 45)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+text = "Sabedoria"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Mudanca" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Sab/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+tooltip_text = "O valor temporario representa quantos pontos de atributo você já acrescentou ou retirou de seu atributo.
+Lembre-se que reduzir esse valor até menos do que -2 não trará beneficios para seu persoangem."
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Valor" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Sab/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+tooltip_text = "O valor total do seu atributo atualmente. 
+O Maximo que você pode ter de atributo atravez dessa distribuição de pontos varia entre 4 e 20."
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BonificadorAtributo" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Sab/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+tooltip_text = "O valor de bonus varia de acordo com cada raça.
+Esse valor pode variar entre -3 e +3.
+
+ATENÇÃO: tome cuidado ao distribuir seus pontos. Pois essa bonificação poderá afetar o seu valor para menos do que 4.
+"
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ModificadorAtributo" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Sab/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+tooltip_text = "O modificador irá indicar quanto que você irá somar a sua rolagem de dado 
+toda vez que você for realizar alguma rolagem relacionada com esse atributo.
+
+Ele é calculado atraves da seguinte formula:
+((Valor do Atributo - 10)/2) -> caso o valor não seja inteiro ele é arredondado para baixo."
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotaoAumentarAtributo" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Sab"]
+custom_minimum_size = Vector2(25, 50)
+layout_mode = 0
+offset_left = 325.0
+offset_right = 350.0
+offset_bottom = 50.0
+tooltip_text = "Você poderá utilizar esse botão para aumentar seu atributo enquanto você tiver menos do que 20 pontos no valor do atributo.
+
+ATENÇÃO: cada ponto comprado irá reduzir o seu ponto disponivel em 1."
+disabled = true
+texture_normal = ExtResource("17_2vgai")
+texture_pressed = ExtResource("18_53npu")
+texture_disabled = ExtResource("19_qxx0u")
+
+[node name="BotaoRolarAtributo" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Sab"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 0
+offset_left = 350.0
+offset_right = 400.0
+offset_bottom = 50.0
+tooltip_text = "Você poderá utilizar esse botão para rolar o valor inicial do seu atributo. 
+Esse valor é igual a 1d6+6. Você poderá rolar cada atributo individualmente até 3 vezes. 
+Você só poderá realizar essa rolagem se nenhuma modificação nesse atributo tiver sido realizada."
+texture_normal = ExtResource("20_0gpe2")
+texture_pressed = ExtResource("21_0lsgu")
+texture_disabled = ExtResource("22_uy5es")
+
+[node name="MarginContainer7" type="MarginContainer" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo"]
+custom_minimum_size = Vector2(400, 30)
+layout_mode = 2
+
+[node name="Int" type="Control" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo"]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+
+[node name="BotaoDiminuirAtr" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Int"]
+custom_minimum_size = Vector2(25, 50)
+layout_mode = 0
+offset_right = 25.0
+offset_bottom = 50.0
+tooltip_text = "Você poderá utilizar esse botão para reduzir seu atributo enquanto você tiver mais do que quatro pontos no valor do atributo. 
+
+ATENÇÃO: você só será recompensado por reduzir seu atributo enquanto seu valor temporário for maior do que -2."
+disabled = true
+texture_normal = ExtResource("13_hvmd8")
+texture_pressed = ExtResource("14_q5ig3")
+texture_disabled = ExtResource("15_21dbx")
+
+[node name="AtributoBackground" type="TextureRect" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Int"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 0
+offset_left = 25.0
+offset_right = 325.0
+offset_bottom = 50.0
+texture = ExtResource("16_kaybe")
+
+[node name="AtributoContainer" type="HBoxContainer" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Int/AtributoBackground"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Atributo" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Int/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(100, 45)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+text = "Inteligência"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="Mudanca" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Int/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+tooltip_text = "O valor temporario representa quantos pontos de atributo você já acrescentou ou retirou de seu atributo.
+Lembre-se que reduzir esse valor até menos do que -2 não trará beneficios para seu persoangem."
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Valor" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Int/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+tooltip_text = "O valor total do seu atributo atualmente. 
+O Maximo que você pode ter de atributo atravez dessa distribuição de pontos varia entre 4 e 20."
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BonificadorAtributo" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Int/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+tooltip_text = "O valor de bonus varia de acordo com cada raça.
+Esse valor pode variar entre -3 e +3.
+
+ATENÇÃO: tome cuidado ao distribuir seus pontos. Pois essa bonificação poderá afetar o seu valor para menos do que 4.
+"
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ModificadorAtributo" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Int/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+tooltip_text = "O modificador irá indicar quanto que você irá somar a sua rolagem de dado 
+toda vez que você for realizar alguma rolagem relacionada com esse atributo.
+
+Ele é calculado atraves da seguinte formula:
+((Valor do Atributo - 10)/2) -> caso o valor não seja inteiro ele é arredondado para baixo."
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotaoAumentarAtributo" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Int"]
+custom_minimum_size = Vector2(25, 50)
+layout_mode = 0
+offset_left = 325.0
+offset_right = 350.0
+offset_bottom = 50.0
+tooltip_text = "Você poderá utilizar esse botão para aumentar seu atributo enquanto você tiver menos do que 20 pontos no valor do atributo.
+
+ATENÇÃO: cada ponto comprado irá reduzir o seu ponto disponivel em 1."
+disabled = true
+texture_normal = ExtResource("17_2vgai")
+texture_pressed = ExtResource("18_53npu")
+texture_disabled = ExtResource("19_qxx0u")
+
+[node name="BotaoRolarAtributo" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Int"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 0
+offset_left = 350.0
+offset_right = 400.0
+offset_bottom = 50.0
+tooltip_text = "Você poderá utilizar esse botão para rolar o valor inicial do seu atributo. 
+Esse valor é igual a 1d6+6. Você poderá rolar cada atributo individualmente até 3 vezes. 
+Você só poderá realizar essa rolagem se nenhuma modificação nesse atributo tiver sido realizada."
+texture_normal = ExtResource("20_0gpe2")
+texture_pressed = ExtResource("21_0lsgu")
+texture_disabled = ExtResource("22_uy5es")
+
+[node name="MarginContainer8" type="MarginContainer" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo"]
+custom_minimum_size = Vector2(400, 30)
+layout_mode = 2
+
+[node name="Car" type="Control" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo"]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+
+[node name="BotaoDiminuirAtr" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Car"]
+custom_minimum_size = Vector2(25, 50)
+layout_mode = 0
+offset_right = 25.0
+offset_bottom = 50.0
+tooltip_text = "Você poderá utilizar esse botão para reduzir seu atributo enquanto você tiver mais do que quatro pontos no valor do atributo. 
+
+ATENÇÃO: você só será recompensado por reduzir seu atributo enquanto seu valor temporário for maior do que -2."
+disabled = true
+texture_normal = ExtResource("13_hvmd8")
+texture_pressed = ExtResource("14_q5ig3")
+texture_disabled = ExtResource("15_21dbx")
+
+[node name="AtributoBackground" type="TextureRect" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Car"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 0
+offset_left = 25.0
+offset_right = 325.0
+offset_bottom = 50.0
+texture = ExtResource("16_kaybe")
+
+[node name="AtributoContainer" type="HBoxContainer" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Car/AtributoBackground"]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Atributo" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Car/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(100, 45)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+text = "Carisma"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Mudanca" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Car/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+tooltip_text = "O valor temporario representa quantos pontos de atributo você já acrescentou ou retirou de seu atributo.
+Lembre-se que reduzir esse valor até menos do que -2 não trará beneficios para seu persoangem."
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Valor" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Car/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+tooltip_text = "O valor total do seu atributo atualmente. 
+O Maximo que você pode ter de atributo atravez dessa distribuição de pontos varia entre 4 e 20."
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BonificadorAtributo" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Car/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+tooltip_text = "O valor de bonus varia de acordo com cada raça.
+Esse valor pode variar entre -3 e +3.
+
+ATENÇÃO: tome cuidado ao distribuir seus pontos. Pois essa bonificação poderá afetar o seu valor para menos do que 4.
+"
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ModificadorAtributo" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Car/AtributoBackground/AtributoContainer"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+tooltip_text = "O modificador irá indicar quanto que você irá somar a sua rolagem de dado 
+toda vez que você for realizar alguma rolagem relacionada com esse atributo.
+
+Ele é calculado atraves da seguinte formula:
+((Valor do Atributo - 10)/2) -> caso o valor não seja inteiro ele é arredondado para baixo."
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotaoAumentarAtributo" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Car"]
+custom_minimum_size = Vector2(25, 50)
+layout_mode = 0
+offset_left = 325.0
+offset_right = 350.0
+offset_bottom = 50.0
+tooltip_text = "Você poderá utilizar esse botão para aumentar seu atributo enquanto você tiver menos do que 20 pontos no valor do atributo.
+
+ATENÇÃO: cada ponto comprado irá reduzir o seu ponto disponivel em 1."
+disabled = true
+texture_normal = ExtResource("17_2vgai")
+texture_pressed = ExtResource("18_53npu")
+texture_disabled = ExtResource("19_qxx0u")
+
+[node name="BotaoRolarAtributo" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Car"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 0
+offset_left = 350.0
+offset_right = 400.0
+offset_bottom = 50.0
+tooltip_text = "Você poderá utilizar esse botão para rolar o valor inicial do seu atributo. 
+Esse valor é igual a 1d6+6. Você poderá rolar cada atributo individualmente até 3 vezes. 
+Você só poderá realizar essa rolagem se nenhuma modificação nesse atributo tiver sido realizada."
+texture_normal = ExtResource("20_0gpe2")
+texture_pressed = ExtResource("21_0lsgu")
+texture_disabled = ExtResource("22_uy5es")
+
+[node name="MarginContainer9" type="MarginContainer" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo"]
+custom_minimum_size = Vector2(400, 30)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo"]
+layout_mode = 2
+
+[node name="PontosDisponiveisBacground" type="TextureRect" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/HBoxContainer"]
+custom_minimum_size = Vector2(246, 75)
+layout_mode = 2
+texture = ExtResource("23_vky54")
+
+[node name="EtiquetaPontosDisponiveis" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/HBoxContainer/PontosDisponiveisBacground"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+tooltip_text = "Os pontos disponiveis determinam quantos pontos de atributo 
+você poderá distribuir entre os seus atributos."
+mouse_filter = 1
+theme_override_fonts/font = ExtResource("19_w13jn")
+theme_override_font_sizes/font_size = 30
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ResetarAtributo" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/HBoxContainer"]
+custom_minimum_size = Vector2(150, 75)
+layout_mode = 2
+tooltip_text = "Você poderá utilizar esse botão para resetar completamente todos os atributos distribuidos até então. 
+Isso reseta inclusive a quantidade de rolagens individuais de cada atributo que você pode fazer.
+
+ATENÇÃO: Você só poderá utilizar esse botão uma vez por personagem."
+texture_normal = ExtResource("7_x5cd6")
+texture_pressed = ExtResource("8_csslf")
+texture_disabled = ExtResource("9_64s1b")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/HBoxContainer/ResetarAtributo"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("11_mqmcm")
+theme_override_font_sizes/font_size = 20
+text = "Resetar
+Atributo"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Infobox" type="VBoxContainer" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox"]
+custom_minimum_size = Vector2(962, 917)
+layout_mode = 2
+
+[node name="InfoboxBacground" type="TextureRect" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Infobox"]
+custom_minimum_size = Vector2(962, 917)
+layout_mode = 2
+texture = ExtResource("24_k5bmf")
+
+[node name="Infobox" type="NinePatchRect" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Infobox/InfoboxBacground"]
+custom_minimum_size = Vector2(942, 897)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -471.0
+offset_top = -448.5
+offset_right = 471.0
+offset_bottom = 448.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="InterfaceRaca" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Infobox/InfoboxBacground/Infobox" instance=ExtResource("28_c2j44")]
+visible = false
+
+[node name="InterfacePersonalidade" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Infobox/InfoboxBacground/Infobox" instance=ExtResource("29_3duy5")]
+visible = false
+
+[node name="QualidadeEDefeito" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Infobox/InfoboxBacground/Infobox" instance=ExtResource("30_rxng5")]
+visible = false
+
+[node name="Antecedentes" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Infobox/InfoboxBacground/Infobox" instance=ExtResource("31_dmx12")]
+visible = false
+
+[node name="InterfaceEsferas" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Infobox/InfoboxBacground/Infobox" instance=ExtResource("32_nccw8")]
+visible = false
+
+[node name="InterfaceClasse" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Infobox/InfoboxBacground/Infobox" instance=ExtResource("33_hgrbr")]
+visible = false
+
+[node name="InterfacePericia" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Infobox/InfoboxBacground/Infobox" instance=ExtResource("34_5wxib")]
+visible = false
+
+[node name="InterfaceEquipamentos" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Infobox/InfoboxBacground/Infobox" instance=ExtResource("35_mbkdv")]
+visible = false
+
+[node name="InterfaceTalento" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Infobox/InfoboxBacground/Infobox" instance=ExtResource("36_jmnqw")]
+visible = false
+
+[node name="InterfaceMagiaVulgar" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Infobox/InfoboxBacground/Infobox" instance=ExtResource("37_exvf4")]
+visible = false
+
+[node name="InterfaceMagiaCoincidente" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Infobox/InfoboxBacground/Infobox" instance=ExtResource("39_0ojak")]
+visible = false
+offset_right = 942.0
+offset_bottom = 897.0
+
+[node name="InterfaceQuintessenciaParadoxo" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Infobox/InfoboxBacground/Infobox" instance=ExtResource("38_mdit8")]
+visible = false
+
+[node name="HBoxContainer" type="HBoxContainer" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao"]
+custom_minimum_size = Vector2(1366, 100)
+layout_mode = 2
+
+[node name="BotaoNovoPersonagem" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/HBoxContainer"]
+custom_minimum_size = Vector2(270, 100)
+layout_mode = 2
+tooltip_text = "Inicia a criação de um novo personagem."
+texture_normal = ExtResource("25_a6xox")
+texture_pressed = ExtResource("26_18ku8")
+texture_disabled = ExtResource("27_7fo1o")
+
+[node name="EtiquetaNovoPersonagem" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/HBoxContainer/BotaoNovoPersonagem"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("11_mqmcm")
+theme_override_font_sizes/font_size = 35
+text = "Novo 
+personagem"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotaoCarregarPersonagem" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/HBoxContainer"]
+custom_minimum_size = Vector2(270, 100)
+layout_mode = 2
+tooltip_text = "Carrega um personagem anteriormente criado."
+texture_normal = ExtResource("25_a6xox")
+texture_pressed = ExtResource("26_18ku8")
+texture_disabled = ExtResource("27_7fo1o")
+
+[node name="EtiquetaCarregarPersonagem" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/HBoxContainer/BotaoCarregarPersonagem"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("11_mqmcm")
+theme_override_font_sizes/font_size = 35
+text = "Carregar
+Personagem"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotaoApagarPersonagem" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/HBoxContainer"]
+custom_minimum_size = Vector2(270, 100)
+layout_mode = 2
+tooltip_text = "Apaga um personagem anteriormente criado."
+texture_normal = ExtResource("25_a6xox")
+texture_pressed = ExtResource("26_18ku8")
+texture_disabled = ExtResource("27_7fo1o")
+
+[node name="EtiquetaApagarPersonagem" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/HBoxContainer/BotaoApagarPersonagem"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("11_mqmcm")
+theme_override_font_sizes/font_size = 35
+text = "Apagar
+Personagem"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="BotaoSalvarPersonagem" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/HBoxContainer"]
+custom_minimum_size = Vector2(270, 100)
+layout_mode = 2
+tooltip_text = "Salva as informações do personagem atual."
+texture_normal = ExtResource("25_a6xox")
+texture_pressed = ExtResource("26_18ku8")
+texture_disabled = ExtResource("27_7fo1o")
+
+[node name="EtiquetaSalvarPersonagem" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/HBoxContainer/BotaoSalvarPersonagem"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("11_mqmcm")
+theme_override_font_sizes/font_size = 35
+text = "Salvar
+Personagem"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotaoExportar" type="TextureButton" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/HBoxContainer"]
+custom_minimum_size = Vector2(270, 100)
+layout_mode = 2
+tooltip_text = "Exporta as informações do personagem atual para um PDF oficial."
+texture_normal = ExtResource("25_a6xox")
+texture_pressed = ExtResource("26_18ku8")
+texture_disabled = ExtResource("27_7fo1o")
+
+[node name="EtiquetaExportar" type="Label" parent="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/HBoxContainer/BotaoExportar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("11_mqmcm")
+theme_override_font_sizes/font_size = 35
+text = "Exportar
+Personagem"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="gui_input" from="InterfaceBacground/InterfaceContainer/PersonagemMenu/PersonagemBacground/PersonagemImagem" to="." method="_on_personagem_imagem_gui_input"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/BotaoRetornar" to="." method="_on_botao_retornar_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG1/RacaClasse/Raca/BotaoRaca" to="." method="_on_botao_raca_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG1/RacaClasse/Classe/BotaoClasse" to="." method="_on_botao_classe_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG1/AntecedentesPersonalidade/Antecedentes/BotaoAntecedentes" to="." method="_on_botao_antecedentes_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG1/AntecedentesPersonalidade/Personalidade/BotaoPersonalidade" to="." method="_on_botao_personalidade_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG1/QuaDefPericia/QuaDef/BotaoQuaDef" to="." method="_on_botao_qua_def_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG1/QuaDefPericia/Pericia/BotaoPericia" to="." method="_on_botao_pericia_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG2/TalentoMagiCoin/Talento/BotaoTalento" to="." method="_on_botao_talento_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG2/TalentoMagiCoin/MagiCoin/BotaoMagiCoin" to="." method="_on_botao_magi_coin_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG2/MagiVulEquip/MagiVul/BotaoMagiVul" to="." method="_on_botao_magi_vul_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG2/MagiVulEquip/Equip/BotaoEquip" to="." method="_on_botao_equip_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG2/EsferasQuiPara/Esferas/BotaoEsferas" to="." method="_on_botao_esferas_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/MenuPG2/EsferasQuiPara/QuiPara/BotaoQuiPara" to="." method="_on_botao_qui_para_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/PersonagemMenu/MenuContainer/HBoxContainer/BotaoAvancar" to="." method="_on_botao_avancar_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/For/BotaoDiminuirAtr" to="." method="_on_botao_diminuir_for_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/For/BotaoAumentarAtributo" to="." method="_on_botao_aumentar_for_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/For/BotaoRolarAtributo" to="." method="_on_botao_rolar_for_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Des/BotaoDiminuirAtr" to="." method="_on_botao_diminuir_des_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Des/BotaoAumentarAtributo" to="." method="_on_botao_aumentar_des_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Des/BotaoRolarAtributo" to="." method="_on_botao_rolar_des_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Con/BotaoDiminuirAtr" to="." method="_on_botao_diminuir_con_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Con/BotaoAumentarAtributo" to="." method="_on_botao_aumentar_con_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Con/BotaoRolarAtributo" to="." method="_on_botao_rolar_con_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Hon/BotaoDiminuirAtr" to="." method="_on_botao_diminuir_hon_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Hon/BotaoAumentarAtributo" to="." method="_on_botao_aumentar_hon_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Hon/BotaoRolarAtributo" to="." method="_on_botao_rolar_hon_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/San/BotaoDiminuirAtr" to="." method="_on_botao_diminuir_san_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/San/BotaoAumentarAtributo" to="." method="_on_botao_aumentar_san_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/San/BotaoRolarAtributo" to="." method="_on_botao_rolar_san_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Sab/BotaoDiminuirAtr" to="." method="_on_botao_diminuir_sab_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Sab/BotaoAumentarAtributo" to="." method="_on_botao_aumentar_sab_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Sab/BotaoRolarAtributo" to="." method="_on_botao_rolar_sab_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Int/BotaoDiminuirAtr" to="." method="_on_botao_diminuir_int_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Int/BotaoAumentarAtributo" to="." method="_on_botao_aumentar_int_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Int/BotaoRolarAtributo" to="." method="_on_botao_rolar_int_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Car/BotaoDiminuirAtr" to="." method="_on_botao_diminuir_car_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Car/BotaoAumentarAtributo" to="." method="_on_botao_aumentar_car_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/Car/BotaoRolarAtributo" to="." method="_on_botao_rolar_car_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/AtributoInfobox/Atributo/HBoxContainer/ResetarAtributo" to="." method="_on_resetar_atributo_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/HBoxContainer/BotaoNovoPersonagem" to="." method="_on_botao_novo_personagem_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/HBoxContainer/BotaoCarregarPersonagem" to="." method="_on_botao_carregar_personagem_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/HBoxContainer/BotaoApagarPersonagem" to="." method="_on_botao_apagar_personagem_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/HBoxContainer/BotaoSalvarPersonagem" to="." method="_on_botao_salvar_personagem_pressed"]
+[connection signal="pressed" from="InterfaceBacground/InterfaceContainer/AtributoInfoboxButao/HBoxContainer/BotaoExportar" to="." method="_on_botao_exportar_pressed"]

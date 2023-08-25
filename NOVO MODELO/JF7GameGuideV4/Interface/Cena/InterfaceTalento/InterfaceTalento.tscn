@@ -1,0 +1,1205 @@
+[gd_scene load_steps=14 format=3 uid="uid://blaxttdnciphp"]
+
+[ext_resource type="Script" path="res://Interface/Cena/InterfaceTalento/InterfaceTalento.gd" id="1_eutqk"]
+
+[sub_resource type="Gradient" id="Gradient_ma2e5"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_yha4v"]
+gradient = SubResource("Gradient_ma2e5")
+
+[sub_resource type="Gradient" id="Gradient_qt22e"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_faymo"]
+gradient = SubResource("Gradient_qt22e")
+
+[sub_resource type="Gradient" id="Gradient_x8rqt"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_2cqyl"]
+gradient = SubResource("Gradient_x8rqt")
+
+[sub_resource type="Gradient" id="Gradient_o2i1c"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_4nocc"]
+gradient = SubResource("Gradient_o2i1c")
+
+[sub_resource type="Gradient" id="Gradient_dp3i8"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_qewnm"]
+gradient = SubResource("Gradient_dp3i8")
+
+[sub_resource type="Gradient" id="Gradient_l5csg"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_huveh"]
+gradient = SubResource("Gradient_l5csg")
+
+[node name="InterfaceTalento" type="Control"]
+custom_minimum_size = Vector2(942, 897)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 942.0
+offset_bottom = 897.0
+script = ExtResource("1_eutqk")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Talentos"
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OptionButton" type="OptionButton" parent="VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Pontos de Talento disponivel:"
+
+[node name="Label4" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "00"
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label2" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Pontos de bonus:"
+
+[node name="Label5" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "0000"
+
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label3" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "piscina de experiencia:"
+
+[node name="Label6" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "000000"
+
+[node name="MarginContainer4" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+text = "1º Circulo:"
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer9" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer9"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer9"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer9"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton6" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer9"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer4" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer9"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton7" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer9"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer5" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer9"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton8" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer9"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer6" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer9"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton9" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer9"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer9"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer16" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer16"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer16"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer16"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton6" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer16"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer4" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer16"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton7" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer16"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer5" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer16"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton8" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer16"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer6" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer16"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton9" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer16"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer16"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer17" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer17"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer17"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer17"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton6" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer17"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer4" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer17"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton7" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer17"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer5" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer17"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton8" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer17"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer6" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer17"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton9" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer17"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer17"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer18" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer18"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer18"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer18"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton6" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer18"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer4" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer18"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton7" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer18"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer5" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer18"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton8" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer18"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer6" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer18"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton9" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer18"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer18"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+text = "2º Circulo:"
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer10" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer10"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer10"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer10"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton6" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer10"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer4" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer10"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton7" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer10"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer5" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer10"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton8" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer10"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer6" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer10"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton9" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer10"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer10"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer19" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer19"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer19"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer19"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton6" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer19"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer4" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer19"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton7" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer19"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer5" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer19"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton8" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer19"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer6" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer19"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton9" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer19"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer19"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer20" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer20"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer20"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer20"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton6" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer20"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer4" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer20"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton7" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer20"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer5" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer20"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton8" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer20"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer6" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer20"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton9" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer20"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer20"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+text = "3º Circulo:"
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer11" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer11"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer11"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer11"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton6" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer11"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer4" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer11"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton7" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer11"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer5" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer11"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton8" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer11"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer6" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer11"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton9" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer11"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer11"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer21" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer21"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer21"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer21"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton6" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer21"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer4" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer21"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton7" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer21"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer5" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer21"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton8" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer21"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer6" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer21"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton9" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer21"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer21"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+text = "4º Circulo:"
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer12" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer12"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer12"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer12"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton6" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer12"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer4" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer12"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton7" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer12"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer5" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer12"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton8" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer12"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer6" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer12"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton9" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer12"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer12"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer6"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer6"]
+layout_mode = 2
+text = "5º Circulo:"
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer6"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer13" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer13"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer13"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer13"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton6" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer13"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer4" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer13"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton7" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer13"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer5" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer13"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton8" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer13"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer6" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer13"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton9" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer13"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer13"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer7" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer7"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer7"]
+layout_mode = 2
+text = "6º Circulo:"
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer7"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer14" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer14"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer14"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer14"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton6" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer14"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer4" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer14"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton7" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer14"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer5" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer14"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton8" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer14"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer6" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer14"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton9" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer14"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer14"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer8" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer8"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer8"]
+layout_mode = 2
+text = "7º Circulo:"
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer8"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer15" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer15"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer15"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer15"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton6" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer15"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer4" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer15"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton7" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer15"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer5" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer15"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton8" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer15"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer6" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer15"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton9" type="TextureButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer15"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_yha4v")
+texture_pressed = SubResource("GradientTexture1D_faymo")
+texture_disabled = SubResource("GradientTexture1D_2cqyl")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxContainer15"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 65)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_4nocc")
+texture_pressed = SubResource("GradientTexture1D_qewnm")
+texture_disabled = SubResource("GradientTexture1D_huveh")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer3/TextureButton" to="." method="_on_texture_button_pressed"]

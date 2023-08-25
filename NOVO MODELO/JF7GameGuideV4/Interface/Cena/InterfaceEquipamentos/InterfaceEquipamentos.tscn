@@ -1,0 +1,517 @@
+[gd_scene load_steps=14 format=3 uid="uid://cr75j1lkoc7mi"]
+
+[ext_resource type="Script" path="res://Interface/Script/InterfaceEquipamentos/InterfaceEquipamentos.gd" id="1_3sq22"]
+
+[sub_resource type="Gradient" id="Gradient_dlavu"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_f8cyv"]
+gradient = SubResource("Gradient_dlavu")
+
+[sub_resource type="Gradient" id="Gradient_7wlw5"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_100oc"]
+gradient = SubResource("Gradient_7wlw5")
+
+[sub_resource type="Gradient" id="Gradient_py8wx"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_ea68h"]
+gradient = SubResource("Gradient_py8wx")
+
+[sub_resource type="Gradient" id="Gradient_jssdq"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_utr4l"]
+gradient = SubResource("Gradient_jssdq")
+
+[sub_resource type="Gradient" id="Gradient_vvnm2"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_xllce"]
+gradient = SubResource("Gradient_vvnm2")
+
+[sub_resource type="Gradient" id="Gradient_w8dd1"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_xfmch"]
+gradient = SubResource("Gradient_w8dd1")
+
+[node name="InterfaceEquipamentos" type="Control"]
+custom_minimum_size = Vector2(942, 897)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 942.0
+offset_bottom = 897.0
+script = ExtResource("1_3sq22")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Equipamentos Iniciais:"
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+text = "Arma Primaria: "
+
+[node name="OptionButton" type="OptionButton" parent="VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label2" type="Label" parent="VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+text = "Arma Secundaria: "
+
+[node name="OptionButton2" type="OptionButton" parent="VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+
+[node name="MarginContainer4" type="MarginContainer" parent="VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label3" type="Label" parent="VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+text = "Kits: "
+
+[node name="OptionButton3" type="OptionButton" parent="VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+text = "Armadura: "
+
+[node name="OptionButton" type="OptionButton" parent="VBoxContainer/HBoxContainer4"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label2" type="Label" parent="VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+text = "Auxiliar 1:"
+
+[node name="OptionButton2" type="OptionButton" parent="VBoxContainer/HBoxContainer4"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+
+[node name="MarginContainer4" type="MarginContainer" parent="VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label3" type="Label" parent="VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+text = "Auxiliar 2:"
+
+[node name="OptionButton3" type="OptionButton" parent="VBoxContainer/HBoxContainer4"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+text = "Extra 1:"
+
+[node name="OptionButton" type="OptionButton" parent="VBoxContainer/HBoxContainer5"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label2" type="Label" parent="VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+text = "Extra 2:"
+
+[node name="OptionButton2" type="OptionButton" parent="VBoxContainer/HBoxContainer5"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+
+[node name="MarginContainer4" type="MarginContainer" parent="VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label3" type="Label" parent="VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+text = "Extra 3:"
+
+[node name="OptionButton3" type="OptionButton" parent="VBoxContainer/HBoxContainer5"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer6"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer6"]
+layout_mode = 2
+text = "Dinheiro Inicial:"
+
+[node name="Label4" type="Label" parent="VBoxContainer/HBoxContainer6"]
+layout_mode = 2
+text = "9999"
+
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer/HBoxContainer6"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="VBoxContainer/HBoxContainer6"]
+layout_mode = 2
+text = "Dinheiro Rolado: "
+
+[node name="Label3" type="Label" parent="VBoxContainer/HBoxContainer6"]
+layout_mode = 2
+text = "9999"
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/HBoxContainer6"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+
+[node name="Label5" type="Label" parent="VBoxContainer/HBoxContainer6"]
+layout_mode = 2
+text = "Dinheiro Total:"
+
+[node name="Label6" type="Label" parent="VBoxContainer/HBoxContainer6"]
+layout_mode = 2
+text = "9999"
+
+[node name="MarginContainer4" type="MarginContainer" parent="VBoxContainer/HBoxContainer6"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+text = "Equipamentos Extras:"
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer7" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer7"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/HBoxContainer7"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_f8cyv")
+texture_pressed = SubResource("GradientTexture1D_100oc")
+texture_disabled = SubResource("GradientTexture1D_ea68h")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer7"]
+layout_mode = 2
+text = "Armas:"
+
+[node name="OptionButton" type="OptionButton" parent="VBoxContainer/HBoxContainer7"]
+custom_minimum_size = Vector2(125, 0)
+layout_mode = 2
+
+[node name="TextureButton2" type="TextureButton" parent="VBoxContainer/HBoxContainer7"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_f8cyv")
+texture_pressed = SubResource("GradientTexture1D_100oc")
+texture_disabled = SubResource("GradientTexture1D_ea68h")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextureButton3" type="TextureButton" parent="VBoxContainer/HBoxContainer7"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_f8cyv")
+texture_pressed = SubResource("GradientTexture1D_100oc")
+texture_disabled = SubResource("GradientTexture1D_ea68h")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="VBoxContainer/HBoxContainer7"]
+layout_mode = 2
+text = "Armaduras:"
+
+[node name="OptionButton2" type="OptionButton" parent="VBoxContainer/HBoxContainer7"]
+custom_minimum_size = Vector2(125, 0)
+layout_mode = 2
+
+[node name="TextureButton4" type="TextureButton" parent="VBoxContainer/HBoxContainer7"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_f8cyv")
+texture_pressed = SubResource("GradientTexture1D_100oc")
+texture_disabled = SubResource("GradientTexture1D_ea68h")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextureButton5" type="TextureButton" parent="VBoxContainer/HBoxContainer7"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_f8cyv")
+texture_pressed = SubResource("GradientTexture1D_100oc")
+texture_disabled = SubResource("GradientTexture1D_ea68h")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label3" type="Label" parent="VBoxContainer/HBoxContainer7"]
+layout_mode = 2
+text = "Kits"
+
+[node name="OptionButton3" type="OptionButton" parent="VBoxContainer/HBoxContainer7"]
+custom_minimum_size = Vector2(125, 0)
+layout_mode = 2
+
+[node name="TextureButton6" type="TextureButton" parent="VBoxContainer/HBoxContainer7"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_f8cyv")
+texture_pressed = SubResource("GradientTexture1D_100oc")
+texture_disabled = SubResource("GradientTexture1D_ea68h")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer4" type="MarginContainer" parent="VBoxContainer/HBoxContainer7"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer9" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer9"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/HBoxContainer9"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_f8cyv")
+texture_pressed = SubResource("GradientTexture1D_100oc")
+texture_disabled = SubResource("GradientTexture1D_ea68h")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer9"]
+layout_mode = 2
+text = "itens"
+
+[node name="OptionButton" type="OptionButton" parent="VBoxContainer/HBoxContainer9"]
+custom_minimum_size = Vector2(123, 0)
+layout_mode = 2
+
+[node name="TextureButton2" type="TextureButton" parent="VBoxContainer/HBoxContainer9"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_f8cyv")
+texture_pressed = SubResource("GradientTexture1D_100oc")
+texture_disabled = SubResource("GradientTexture1D_ea68h")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextureButton3" type="TextureButton" parent="VBoxContainer/HBoxContainer9"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_f8cyv")
+texture_pressed = SubResource("GradientTexture1D_100oc")
+texture_disabled = SubResource("GradientTexture1D_ea68h")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="VBoxContainer/HBoxContainer9"]
+layout_mode = 2
+text = "Acessorios"
+
+[node name="OptionButton2" type="OptionButton" parent="VBoxContainer/HBoxContainer9"]
+custom_minimum_size = Vector2(123, 0)
+layout_mode = 2
+
+[node name="TextureButton4" type="TextureButton" parent="VBoxContainer/HBoxContainer9"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_f8cyv")
+texture_pressed = SubResource("GradientTexture1D_100oc")
+texture_disabled = SubResource("GradientTexture1D_ea68h")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextureButton5" type="TextureButton" parent="VBoxContainer/HBoxContainer9"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_f8cyv")
+texture_pressed = SubResource("GradientTexture1D_100oc")
+texture_disabled = SubResource("GradientTexture1D_ea68h")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label3" type="Label" parent="VBoxContainer/HBoxContainer9"]
+layout_mode = 2
+text = "Consumiveis"
+
+[node name="OptionButton3" type="OptionButton" parent="VBoxContainer/HBoxContainer9"]
+custom_minimum_size = Vector2(123, 0)
+layout_mode = 2
+
+[node name="TextureButton6" type="TextureButton" parent="VBoxContainer/HBoxContainer9"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_f8cyv")
+texture_pressed = SubResource("GradientTexture1D_100oc")
+texture_disabled = SubResource("GradientTexture1D_ea68h")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer4" type="MarginContainer" parent="VBoxContainer/HBoxContainer9"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer8" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/HBoxContainer8"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer8"]
+layout_mode = 2
+text = "Itens Adquiridos:"
+
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer/HBoxContainer8"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="MarginContainer4" type="MarginContainer" parent="VBoxContainer/HBoxContainer8"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label2" type="Label" parent="VBoxContainer/HBoxContainer8"]
+layout_mode = 2
+text = "Descrição do item:"
+
+[node name="MarginContainer5" type="MarginContainer" parent="VBoxContainer/HBoxContainer8"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer10" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 65)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer10"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/HBoxContainer10"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_utr4l")
+texture_pressed = SubResource("GradientTexture1D_xllce")
+texture_disabled = SubResource("GradientTexture1D_xfmch")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/HBoxContainer10"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer10/TextureButton" to="." method="_on_texture_button_pressed"]

@@ -1,0 +1,141 @@
+[gd_scene load_steps=14 format=3 uid="uid://eli0rsu8mt63"]
+
+[ext_resource type="Script" path="res://Interface/Script/InterfaceAntecedentes/Antecedentes.gd" id="1_j51vf"]
+
+[sub_resource type="Gradient" id="Gradient_ilb3y"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_o8dos"]
+gradient = SubResource("Gradient_ilb3y")
+
+[sub_resource type="Gradient" id="Gradient_7yxht"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_2kh7g"]
+gradient = SubResource("Gradient_7yxht")
+
+[sub_resource type="Gradient" id="Gradient_vovkk"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_ujaki"]
+gradient = SubResource("Gradient_vovkk")
+
+[sub_resource type="Gradient" id="Gradient_1nam8"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_qkbvd"]
+gradient = SubResource("Gradient_1nam8")
+
+[sub_resource type="Gradient" id="Gradient_onvs0"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_gjdiu"]
+gradient = SubResource("Gradient_onvs0")
+
+[sub_resource type="Gradient" id="Gradient_v3gdi"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_bk0pj"]
+gradient = SubResource("Gradient_v3gdi")
+
+[node name="Antecedentes" type="Control"]
+custom_minimum_size = Vector2(942, 897)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 942.0
+offset_bottom = 897.0
+script = ExtResource("1_j51vf")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "Antecedentes"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OptionButton" type="OptionButton" parent="VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+
+[node name="TextureButton2" type="TextureButton" parent="VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_o8dos")
+texture_pressed = SubResource("GradientTexture1D_2kh7g")
+texture_disabled = SubResource("GradientTexture1D_ujaki")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 65)
+layout_mode = 2
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_qkbvd")
+texture_pressed = SubResource("GradientTexture1D_gjdiu")
+texture_disabled = SubResource("GradientTexture1D_bk0pj")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer3/TextureButton" to="." method="_on_texture_button_pressed"]

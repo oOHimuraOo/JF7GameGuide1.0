@@ -1,0 +1,236 @@
+[gd_scene load_steps=14 format=3 uid="uid://x53hc2ddvbe1"]
+
+[ext_resource type="Script" path="res://Interface/Script/InterfaceEsferas/InterfaceEsferas.gd" id="1_5ybhk"]
+
+[sub_resource type="Gradient" id="Gradient_2pvdr"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_vi6lm"]
+gradient = SubResource("Gradient_2pvdr")
+
+[sub_resource type="Gradient" id="Gradient_qsark"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_0d8dl"]
+gradient = SubResource("Gradient_qsark")
+
+[sub_resource type="Gradient" id="Gradient_e3ycd"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_02nv2"]
+gradient = SubResource("Gradient_e3ycd")
+
+[sub_resource type="Gradient" id="Gradient_12kjq"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_jjod4"]
+gradient = SubResource("Gradient_12kjq")
+
+[sub_resource type="Gradient" id="Gradient_b4bkb"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_q3rfj"]
+gradient = SubResource("Gradient_b4bkb")
+
+[sub_resource type="Gradient" id="Gradient_oq6or"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_e3amw"]
+gradient = SubResource("Gradient_oq6or")
+
+[node name="InterfaceEsferas" type="Control"]
+custom_minimum_size = Vector2(942, 897)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 942.0
+offset_bottom = 897.0
+script = ExtResource("1_5ybhk")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Avatar"
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer2" type="VBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer2/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer2/HBoxContainer"]
+layout_mode = 2
+text = "Adormecido:"
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/HBoxContainer2/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer/HBoxContainer2/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label2" type="Label" parent="VBoxContainer/HBoxContainer2/HBoxContainer"]
+layout_mode = 2
+text = "Desperto:"
+
+[node name="MarginContainer4" type="MarginContainer" parent="VBoxContainer/HBoxContainer2/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/HBoxContainer2/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/HBoxContainer2/ScrollContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! "
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer/HBoxContainer2/ScrollContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! "
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer2/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="EscolherAdormecido" type="TextureButton" parent="VBoxContainer/HBoxContainer2/HBoxContainer2"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_vi6lm")
+texture_pressed = SubResource("GradientTexture1D_0d8dl")
+texture_disabled = SubResource("GradientTexture1D_02nv2")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/HBoxContainer2/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer/HBoxContainer2/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="EscolherDesperto" type="TextureButton" parent="VBoxContainer/HBoxContainer2/HBoxContainer2"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_vi6lm")
+texture_pressed = SubResource("GradientTexture1D_0d8dl")
+texture_disabled = SubResource("GradientTexture1D_02nv2")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer4" type="MarginContainer" parent="VBoxContainer/HBoxContainer2/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+text = "Esfera"
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OptionButton" type="OptionButton" parent="VBoxContainer/HBoxContainer4"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! "
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer/ScrollContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! INSIRA TEXTO AQUI! "
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 65)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/HBoxContainer5"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+texture_normal = SubResource("GradientTexture1D_jjod4")
+texture_pressed = SubResource("GradientTexture1D_q3rfj")
+texture_disabled = SubResource("GradientTexture1D_e3amw")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer5/TextureButton" to="." method="_on_texture_button_pressed"]
